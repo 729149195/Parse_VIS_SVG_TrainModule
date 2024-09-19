@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000" style="max-width: 100%; height: auto; font: 10px sans-serif;">
+    <rect x="10" y="10" width="100" height="100" fill="hsl(0, 100%, 50%)" stroke="#000000" stroke-width="2" id="rect_1"/>
+    <rect x="120" y="10" width="100" height="100" fill="#00FF00" stroke="none" id="rect_2"/>
+    <rect x="230" y="10" width="100" height="100" fill="none" stroke="#0000FF" stroke-width="5" id="rect_3"/>
+    <rect x="340" y="10" width="100" height="100" fill="hsl(240, 100%, 50%)" stroke="none" opacity="0.5" id="rect_4"/>
+
+    <circle cx="60" cy="200" r="50" fill="hsl(120, 100%, 50%)" stroke="black" stroke-width="2" id="circle_1"/>
+    <circle cx="200" cy="200" r="50" fill="none" stroke="red" stroke-width="3" transform="translate(100,0)" id="circle_2"/>
+    <circle cx="340" cy="200" r="50" fill="#0000FF" stroke="black" stroke-width="1" transform="scale(1.5)" id="circle_3"/>
+    
+    <ellipse cx="60" cy="350" rx="50" ry="30" fill="hsl(60, 100%, 50%)" stroke="black" stroke-width="2" id="ellipse_1"/>
+    <ellipse cx="200" cy="350" rx="50" ry="30" fill="none" stroke="purple" stroke-width="3" transform="rotate(45,200,350)" id="ellipse_2"/>
+    <ellipse cx="340" cy="350" rx="50" ry="30" fill="#FF00FF" stroke="none" transform="translate(50,50)" id="ellipse_3"/>
+    
+    <line x1="10" y1="450" x2="110" y2="450" stroke="#000000" stroke-width="2" id="line_1"/>
+    <line x1="120" y1="450" x2="220" y2="450" stroke="red" stroke-width="3" transform="translate(50,0)" id="line_2"/>
+    <line x1="230" y1="450" x2="330" y2="450" stroke="blue" stroke-width="1" transform="rotate(30,280,450)" id="line_3"/>
+    
+    <polyline points="10,550 60,600 110,550" fill="none" stroke="#000000" stroke-width="2" id="polyline_1"/>
+    <polyline points="120,550 170,600 220,550" fill="none" stroke="red" stroke-width="3" transform="translate(50,0)" id="polyline_2"/>
+    <polygon points="230,550 280,600 330,550" fill="#00FFFF" stroke="blue" stroke-width="1" id="polygon_1"/>
+    
+    <path d="M 10 650 Q 50 700 90 650 T 170 650" fill="none" stroke="black" stroke-width="2" id="path_1"/>
+    <path d="M 180 650 Q 220 700 260 650 T 340 650" fill="none" stroke="red" stroke-width="3" transform="translate(50,0)" id="path_2"/>
+    <path d="M 350 650 Q 390 700 430 650 T 510 650" fill="yellow" stroke="blue" stroke-width="1" id="path_3"/>
+
+    <text x="10" y="750" fill="black" id="text_1">Normal Text</text>
+    <text x="150" y="750" fill="red" transform="rotate(45,150,750)" id="text_2">Rotated Text</text>
+    <text x="300" y="750" fill="blue" opacity="0.5" id="text_3">Semi-transparent Text</text>
+        <g transform="translate(0, 50)">
+        <rect x="10" y="800" width="100" height="100" fill="green" stroke="black" id="nested_rect_1"/>
+        <circle cx="200" cy="850" r="50" fill="none" stroke="blue" stroke-width="3" id="nested_circle_1"/>
+        <g transform="scale(1.5)">
+            <ellipse cx="340" cy="850" rx="50" ry="30" fill="orange" stroke="none" id="nested_ellipse_1"/>
+        </g>
+    </g>
+</svg>

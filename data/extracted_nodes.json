@@ -1,0 +1,3242 @@
+{
+    "{http://www.w3.org/2000/svg}rect/_3": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 3,
+        "layer": [
+            0,
+            0,
+            10,
+            3
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_5": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 5,
+        "layer": [
+            0,
+            0,
+            10,
+            5
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_7": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 7,
+        "layer": [
+            0,
+            0,
+            10,
+            7
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_9": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 9,
+        "layer": [
+            0,
+            0,
+            10,
+            9
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_11": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 11,
+        "layer": [
+            0,
+            0,
+            10,
+            11
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_13": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 13,
+        "layer": [
+            0,
+            0,
+            10,
+            13
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_15": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 15,
+        "layer": [
+            0,
+            0,
+            10,
+            15
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_17": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 17,
+        "layer": [
+            0,
+            0,
+            10,
+            17
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_19": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 19,
+        "layer": [
+            0,
+            0,
+            10,
+            19
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_22": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 22,
+        "layer": [
+            0,
+            0,
+            10,
+            22
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_24": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 24,
+        "layer": [
+            0,
+            0,
+            10,
+            24
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_26": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 26,
+        "layer": [
+            0,
+            0,
+            10,
+            26
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_28": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 28,
+        "layer": [
+            0,
+            0,
+            10,
+            28
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_30": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 30,
+        "layer": [
+            0,
+            0,
+            10,
+            30
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_32": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 32,
+        "layer": [
+            0,
+            0,
+            10,
+            32
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_34": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 34,
+        "layer": [
+            0,
+            0,
+            10,
+            34
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_36": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 36,
+        "layer": [
+            0,
+            0,
+            10,
+            36
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_38": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 38,
+        "layer": [
+            0,
+            0,
+            10,
+            38
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_41": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 41,
+        "layer": [
+            0,
+            0,
+            10,
+            41
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_43": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 43,
+        "layer": [
+            0,
+            0,
+            10,
+            43
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_45": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 45,
+        "layer": [
+            0,
+            0,
+            10,
+            45
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_47": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 47,
+        "layer": [
+            0,
+            0,
+            10,
+            47
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_49": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 49,
+        "layer": [
+            0,
+            0,
+            10,
+            49
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_51": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 51,
+        "layer": [
+            0,
+            0,
+            10,
+            51
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_53": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 53,
+        "layer": [
+            0,
+            0,
+            10,
+            53
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_55": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 55,
+        "layer": [
+            0,
+            0,
+            10,
+            55
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_57": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 57,
+        "layer": [
+            0,
+            0,
+            10,
+            57
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_60": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 60,
+        "layer": [
+            0,
+            0,
+            10,
+            60
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_62": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 62,
+        "layer": [
+            0,
+            0,
+            10,
+            62
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_64": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 64,
+        "layer": [
+            0,
+            0,
+            10,
+            64
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_66": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 66,
+        "layer": [
+            0,
+            0,
+            10,
+            66
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_68": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 68,
+        "layer": [
+            0,
+            0,
+            10,
+            68
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_70": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 70,
+        "layer": [
+            0,
+            0,
+            10,
+            70
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_72": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 72,
+        "layer": [
+            0,
+            0,
+            10,
+            72
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_74": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 74,
+        "layer": [
+            0,
+            0,
+            10,
+            74
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_76": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 76,
+        "layer": [
+            0,
+            0,
+            10,
+            76
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_79": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 79,
+        "layer": [
+            0,
+            0,
+            10,
+            79
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_81": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 81,
+        "layer": [
+            0,
+            0,
+            10,
+            81
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_83": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 83,
+        "layer": [
+            0,
+            0,
+            10,
+            83
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_85": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 85,
+        "layer": [
+            0,
+            0,
+            10,
+            85
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_87": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 87,
+        "layer": [
+            0,
+            0,
+            10,
+            87
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_89": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 89,
+        "layer": [
+            0,
+            0,
+            10,
+            89
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_91": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 91,
+        "layer": [
+            0,
+            0,
+            10,
+            91
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_93": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 93,
+        "layer": [
+            0,
+            0,
+            10,
+            93
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_95": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 95,
+        "layer": [
+            0,
+            0,
+            10,
+            95
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_98": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 98,
+        "layer": [
+            0,
+            0,
+            10,
+            98
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_100": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 100,
+        "layer": [
+            0,
+            0,
+            10,
+            100
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_102": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 102,
+        "layer": [
+            0,
+            0,
+            10,
+            102
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_104": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 104,
+        "layer": [
+            0,
+            0,
+            10,
+            104
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_106": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 106,
+        "layer": [
+            0,
+            0,
+            10,
+            106
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_108": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 108,
+        "layer": [
+            0,
+            0,
+            10,
+            108
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_110": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 110,
+        "layer": [
+            0,
+            0,
+            10,
+            110
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_112": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 112,
+        "layer": [
+            0,
+            0,
+            10,
+            112
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}rect/_114": {
+        "tag": "rect",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 114,
+        "layer": [
+            0,
+            0,
+            10,
+            114
+        ],
+        "text_content": "\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_118": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 118,
+        "layer": [
+            0,
+            0,
+            10,
+            118
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_119": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 119,
+        "layer": [
+            0,
+            0,
+            10,
+            119
+        ],
+        "text_content": "70%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_121": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 121,
+        "layer": [
+            0,
+            0,
+            10,
+            121
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_122": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 122,
+        "layer": [
+            0,
+            0,
+            10,
+            122
+        ],
+        "text_content": "60%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_124": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 124,
+        "layer": [
+            0,
+            0,
+            10,
+            124
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_125": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 125,
+        "layer": [
+            0,
+            0,
+            10,
+            125
+        ],
+        "text_content": "50%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_127": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 127,
+        "layer": [
+            0,
+            0,
+            10,
+            127
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_128": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 128,
+        "layer": [
+            0,
+            0,
+            10,
+            128
+        ],
+        "text_content": "40%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_130": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 130,
+        "layer": [
+            0,
+            0,
+            10,
+            130
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_131": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 131,
+        "layer": [
+            0,
+            0,
+            10,
+            131
+        ],
+        "text_content": "30%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_133": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 133,
+        "layer": [
+            0,
+            0,
+            10,
+            133
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_134": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 134,
+        "layer": [
+            0,
+            0,
+            10,
+            134
+        ],
+        "text_content": "20%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_136": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 136,
+        "layer": [
+            0,
+            0,
+            10,
+            136
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_137": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 137,
+        "layer": [
+            0,
+            0,
+            10,
+            137
+        ],
+        "text_content": "10%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_139": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 139,
+        "layer": [
+            0,
+            0,
+            10,
+            139
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_140": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 140,
+        "layer": [
+            0,
+            0,
+            10,
+            140
+        ],
+        "text_content": "0%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_142": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 142,
+        "layer": [
+            0,
+            0,
+            10,
+            142
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_143": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 143,
+        "layer": [
+            0,
+            0,
+            10,
+            143
+        ],
+        "text_content": "10%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_145": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 145,
+        "layer": [
+            0,
+            0,
+            10,
+            145
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_146": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 146,
+        "layer": [
+            0,
+            0,
+            10,
+            146
+        ],
+        "text_content": "20%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_148": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 148,
+        "layer": [
+            0,
+            0,
+            10,
+            148
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_149": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 149,
+        "layer": [
+            0,
+            0,
+            10,
+            149
+        ],
+        "text_content": "30%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_151": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 151,
+        "layer": [
+            0,
+            0,
+            10,
+            151
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_152": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 152,
+        "layer": [
+            0,
+            0,
+            10,
+            152
+        ],
+        "text_content": "40%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_154": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 154,
+        "layer": [
+            0,
+            0,
+            10,
+            154
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_155": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 155,
+        "layer": [
+            0,
+            0,
+            10,
+            155
+        ],
+        "text_content": "50%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_157": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 157,
+        "layer": [
+            0,
+            0,
+            10,
+            157
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_158": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 158,
+        "layer": [
+            0,
+            0,
+            10,
+            158
+        ],
+        "text_content": "60%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_160": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 160,
+        "layer": [
+            0,
+            0,
+            10,
+            160
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_161": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 161,
+        "layer": [
+            0,
+            0,
+            10,
+            161
+        ],
+        "text_content": "70%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_163": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 163,
+        "layer": [
+            0,
+            0,
+            10,
+            163
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_164": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 164,
+        "layer": [
+            0,
+            0,
+            10,
+            164
+        ],
+        "text_content": "80%",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_165": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 165,
+        "layer": [
+            0,
+            0,
+            10,
+            165
+        ],
+        "text_content": "More truths →",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_166": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 166,
+        "layer": [
+            0,
+            0,
+            10,
+            166
+        ],
+        "text_content": "← More falsehoods",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}path/_168": {
+        "tag": "path",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 168,
+        "layer": [
+            0,
+            0,
+            10,
+            168
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                40.0
+            ],
+            [
+                0.0,
+                337.0
+            ],
+            [
+                0.0,
+                188.5
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_170": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 170,
+        "layer": [
+            0,
+            0,
+            10,
+            170
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_171": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 171,
+        "layer": [
+            0,
+            0,
+            10,
+            171
+        ],
+        "text_content": "Donald Trump",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_173": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 173,
+        "layer": [
+            0,
+            0,
+            10,
+            173
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_174": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 174,
+        "layer": [
+            0,
+            0,
+            10,
+            174
+        ],
+        "text_content": "Kamala Harris",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_176": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 176,
+        "layer": [
+            0,
+            0,
+            10,
+            176
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_177": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 177,
+        "layer": [
+            0,
+            0,
+            10,
+            177
+        ],
+        "text_content": "Joe Biden",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_179": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 179,
+        "layer": [
+            0,
+            0,
+            10,
+            179
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_180": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 180,
+        "layer": [
+            0,
+            0,
+            10,
+            180
+        ],
+        "text_content": "Pete Buttigieg",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_182": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 182,
+        "layer": [
+            0,
+            0,
+            10,
+            182
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_183": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 183,
+        "layer": [
+            0,
+            0,
+            10,
+            183
+        ],
+        "text_content": "Beto O'Rourke",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_185": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 185,
+        "layer": [
+            0,
+            0,
+            10,
+            185
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_186": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 186,
+        "layer": [
+            0,
+            0,
+            10,
+            186
+        ],
+        "text_content": "Elizabeth Warren",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_188": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 188,
+        "layer": [
+            0,
+            0,
+            10,
+            188
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_189": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 189,
+        "layer": [
+            0,
+            0,
+            10,
+            189
+        ],
+        "text_content": "Bernie Sanders",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_191": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 191,
+        "layer": [
+            0,
+            0,
+            10,
+            191
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_192": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 192,
+        "layer": [
+            0,
+            0,
+            10,
+            192
+        ],
+        "text_content": "Michael Bloomberg",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}line/_194": {
+        "tag": "line",
+        "stroke": "currentColor",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 194,
+        "layer": [
+            0,
+            0,
+            10,
+            194
+        ],
+        "text_content": null,
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_195": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "currentColor",
+        "opacity": 1.0,
+        "level": 195,
+        "layer": [
+            0,
+            0,
+            10,
+            195
+        ],
+        "text_content": "Amy Klobuchar",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    },
+    "{http://www.w3.org/2000/svg}text/_197": {
+        "tag": "text",
+        "stroke": "#000000",
+        "stroke-width": 1.0,
+        "stroke-opacity": 1.0,
+        "fill": "#000000",
+        "opacity": 1.0,
+        "level": 197,
+        "layer": [
+            0,
+            0,
+            10,
+            197
+        ],
+        "text_content": "\n            This chart stacks negative categories to the left and positive categories to the right. Inspired by Robert\n            Mann, the truthfulness of presidential candidates is assessed here by PolitiFact. For reasons to avoid this\n            chart form, see Rost Aisch.\n        ",
+        "bbox": [
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ],
+            [
+                0.0,
+                0.0
+            ]
+        ]
+    }
+}

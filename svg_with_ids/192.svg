@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="-440,-170,880,340" style="max-width: 100%; height: auto; font: 10px sans-serif;" id="svg" tag_name="svg">
+<rect x="-400" y="-160" width="80" height="80" fill="hsl(360, 70%, 70%)" stroke="black" stroke-width="1" id="rect_9" tag_name="svg/rect_9"/>
+  <rect x="-400" y="-160" width="80" height="80" fill="hsl(0, 70%, 70%)" stroke="black" stroke-width="1" id="rect_8" tag_name="svg/rect_8"/>
+  <rect x="-320" y="-160" width="80" height="80" fill="hsl(0, 70%, 70%)" stroke="black" stroke-width="1" id="rect_7" tag_name="svg/rect_7"/>
+  <rect x="-240" y="-160" width="80" height="80" fill="hsl(0, 70%, 70%)" stroke="black" stroke-width="1" id="rect_6" tag_name="svg/rect_6"/>
+  <rect x="-160" y="-160" width="80" height="80" fill="hsl(360, 70%, 70%)" stroke="black" stroke-width="1" id="rect_5" tag_name="svg/rect_5"/>
+  <rect x="-80" y="-160" width="80" height="80" fill="hsl(144, 70%, 70%)" stroke="black" stroke-width="1" id="rect_4" tag_name="svg/rect_4"/>
+  <rect x="0" y="-160" width="80" height="80" fill="hsl(180, 70%, 70%)" stroke="black" stroke-width="1" id="rect_3" tag_name="svg/rect_3"/>
+  <rect x="80" y="-160" width="80" height="80" fill="hsl(216, 70%, 70%)" stroke="black" stroke-width="1" id="rect_2" tag_name="svg/rect_2"/>
+  <rect x="160" y="-160" width="80" height="80" fill="hsl(252, 70%, 70%)" stroke="black" stroke-width="1" id="rect_1" tag_name="svg/rect_1"/>
+  <rect x="240" y="-160" width="80" height="80" fill="hsl(288, 70%, 70%)" stroke="black" stroke-width="1" id="rect" tag_name="svg/rect"/>
+</svg>
