@@ -1,3 +1,4 @@
+import json
 import os
 import lxml.etree as ET
 import colorsys
@@ -7,6 +8,8 @@ from tqdm import tqdm
 import re
 import numpy as np
 import matplotlib.colors as mcolors
+import glob
+
 
 class SVGParser:
     def __init__(self, file_path):
@@ -42,15 +45,8 @@ class SVGParser:
 
     def extract_element_info(self, element):
         tag_with_namespace = element.tag
-        
-        # 检查是否是字符串类型的标签（跳过注释或其他特殊节点）
-        if not isinstance(tag_with_namespace, str):
-            print(f"Skipping non-string element: {element.tag}, type: {type(element.tag)}")
-            # 跳过非字符串类型的节点，例如注释节点
-            return None, None, None
-        
         tag_without_namespace = tag_with_namespace.split("}")[-1] if '}' in tag_with_namespace else tag_with_namespace
-    
+
         if tag_without_namespace != "svg":
             count = self.existing_tags.get(tag_without_namespace, 0)
             full_tag = (
@@ -61,24 +57,20 @@ class SVGParser:
             self.existing_tags[tag_without_namespace] = count + 1
         else:
             full_tag = tag_without_namespace
-    
+
         attributes = element.attrib
         text_content = element.text.strip() if element.text else None
-    
+
         if text_content:
             element.text = 'x' * len(text_content)
-        
+
         return full_tag, attributes, element.text
-    
 
     def add_element_to_graph(self, element, parent_path='0', level=0, layer="0"):
+
         tag, attributes, text_content = self.extract_element_info(element)
-
-        # 如果返回的 tag 为 None，跳过该元素
-        if tag is None:
-            return
-
         node_id = tag
+
         element.set('id', node_id)
 
         current_path = f"{parent_path}/{node_id}" if parent_path != '0' else node_id
@@ -90,24 +82,14 @@ class SVGParser:
             self.add_element_to_graph(child, parent_path=current_path, level=level + 1, layer=child_layer)
             new_layer_counter += 1
 
-
     def build_graph(self, svg_root):
         self.add_element_to_graph(svg_root)
 
     def run(self):
         tree, svg_root = SVGParser.parse_svg(self.file_path)
         self.build_graph(svg_root)
-
-        # 对每个元素进行处理，确保只处理有效的 XML 元素
         for elem in svg_root.iter():
-            # 检查 elem.tag 是否为字符串
-            if isinstance(elem.tag, str):
-                elem.tag = elem.tag.split('}', 1)[-1]
-            # 如果不是字符串，则跳过该元素
-            else:
-                print(f"Skipping non-string tag element: {elem.tag}, type: {type(elem.tag)}")
-                continue
-            
+            elem.tag = elem.tag.split('}', 1)[-1]
             attribs = list(elem.attrib.items())
             for k, v in attribs:
                 if k.startswith('{'):
@@ -128,12 +110,6 @@ class LayerDataExtractor:
 
         children = list(element)
         for index, child in enumerate(children):
-            # 确保 child.tag 是字符串类型
-            if not isinstance(child.tag, str):
-                print(f"Skipping non-string child tag: {child.tag}, type: {type(child.tag)}")
-                continue
-
-            # 如果 child.tag 是字符串，才进行 split 操作
             child_tag = child.tag.split('}')[-1]
             child_layer = f"{index}"
             child_path = f"{current_path}/{child_layer}"
@@ -147,15 +123,15 @@ def svgid(svg_input_path, svg_output_path):
     parser = SVGParser(svg_input_path)
     svg_tree = parser.run()
     svg_tree.write(svg_output_path, encoding='utf-8', xml_declaration=True)
-    
-#HSL
+
+
 def get_color_features(color, current_color='black'):
     if color is None:
         return 0.0, 0.0, 0.0
     if color == 'currentColor':
         color = current_color
     if color.lower() == 'none':
-        return -1.0, -1.0, -1.0
+        return 0.0, 0.0, 0.0
 
     try:
         if color.startswith('#'):
@@ -176,115 +152,12 @@ def get_color_features(color, current_color='black'):
             rgb = mcolors.to_rgb(color)
     except ValueError:
         rgb = (0.0, 0.0, 0.0)
-    
+
     if rgb == (0.0, 0.0, 0.0):
         return 0.0, 0.0, 0.0
-    
+
     h, l, s = colorsys.rgb_to_hls(*rgb)
     return h * 360.0, s * 100.0, l * 100.0
-
-#RGB
-# def get_color_features(color, current_color='black'):
-#     if color is None:
-#         return 0.0, 0.0, 0.0
-#     if color == 'currentColor':
-#         color = current_color
-#     if color.lower() == 'none':
-#         return -1.0, -1.0, -1.0
-
-#     try:
-#         if color.startswith('#'):
-#             color = color.lstrip('#')
-#             lv = len(color)
-#             rgb = tuple(int(color[i:i + lv // 3], 16) / 255.0 for i in range(0, lv, lv // 3))
-#         elif color.startswith('rgb'):
-#             rgb = tuple(int(x) / 255.0 for x in re.findall(r'\d+', color))
-#         elif color.startswith('hsl'):
-#             h, s, l = map(float, re.findall(r'[\d.]+', color))
-#             s /= 100.0
-#             l /= 100.0
-#             rgb = colorsys.hls_to_rgb(h / 360.0, l, s)
-#         else:
-#             rgb = mcolors.to_rgb(color)
-#     except ValueError:
-#         rgb = (0.0, 0.0, 0.0)
-
-#     if rgb == (0.0, 0.0, 0.0) and color != 'black':
-#         return 0.0, 0.0, 0.0
-
-#     return tuple(x * 255.0 for x in rgb)
-
-#Lab
-# def rgb_to_xyz(rgb):
-#     """Convert RGB to XYZ color space."""
-#     # Apply gamma correction
-#     rgb = np.array([channel / 255.0 if channel > 0.04045 else channel / 12.92 for channel in rgb])
-#     rgb = np.where(rgb > 0.04045, ((rgb + 0.055) / 1.055) ** 2.4, rgb / 12.92)
-    
-#     # Convert to XYZ using the D65 illuminant
-#     rgb = rgb * 100  # Scale for the transformation
-#     X = rgb[0] * 0.4124 + rgb[1] * 0.3576 + rgb[2] * 0.1805
-#     Y = rgb[0] * 0.2126 + rgb[1] * 0.7152 + rgb[2] * 0.0722
-#     Z = rgb[0] * 0.0193 + rgb[1] * 0.1192 + rgb[2] * 0.9505
-#     return np.array([X, Y, Z])
-
-# def xyz_to_lab(xyz):
-#     """Convert XYZ to CIE Lab color space."""
-#     # Reference white point (D65)
-#     ref_X = 95.047
-#     ref_Y = 100.000
-#     ref_Z = 108.883
-    
-#     xyz[0] /= ref_X
-#     xyz[1] /= ref_Y
-#     xyz[2] /= ref_Z
-    
-#     xyz = np.where(xyz > 0.008856, xyz ** (1/3), (7.787 * xyz) + (16 / 116))
-    
-#     L = (116 * xyz[1]) - 16
-#     a = 500 * (xyz[0] - xyz[1])
-#     b = 200 * (xyz[1] - xyz[2])
-    
-#     return L, a, b
-
-# def get_color_features(color, current_color='black'):
-#     if color is None:
-#         return 0.0, 0.0, 0.0
-#     if color == 'currentColor':
-#         color = current_color
-#     if color.lower() == 'none':
-#         return -1.0, -1.0, -1.0
-
-#     try:
-#         # Convert hex code
-#         if color.startswith('#'):
-#             color = color.lstrip('#')
-#             lv = len(color)
-#             rgb = tuple(int(color[i:i + lv // 3], 16) for i in range(0, lv, lv // 3))
-#         # Convert rgb() function
-#         elif color.startswith('rgb'):
-#             rgb = tuple(map(int, re.findall(r'\d+', color)))
-#         # Convert hsl() function to RGB first
-#         elif color.startswith('hsl'):
-#             h, s, l = map(float, re.findall(r'[\d.]+', color))
-#             s /= 100.0
-#             l /= 100.0
-#             if l == 1.0:
-#                 return h, 0.0, l * 100.0
-#             rgb = colorsys.hls_to_rgb(h / 360.0, l, s)
-#             rgb = tuple(int(x * 255) for x in rgb)
-#         else:
-#             # Named color
-#             rgb = tuple(int(x * 255) for x in mcolors.to_rgb(color))
-#     except ValueError:
-#         return 0.0, 0.0, 0.0
-
-#     # Convert RGB to Lab
-#     rgb = np.array(rgb)  # Convert to numpy array
-#     xyz = rgb_to_xyz(rgb)
-#     L, a, b = xyz_to_lab(xyz)
-
-#     return L, a, b
 
 def get_inherited_attribute(element, attribute_name):
     current_element = element
@@ -297,10 +170,10 @@ def get_inherited_attribute(element, attribute_name):
 def apply_transform(transform_str, points):
     if transform_str is None:
         return points
-    transform_commands = re.findall(r'\w+\([^\)]+\)', transform_str)
+    transform_commands = re.findall(r'\w+\([^)]+\)', transform_str)
     for command in transform_commands:
         cmd_type = command.split('(')[0]
-        values = list(map(float, re.findall(r'[-\d\.]+', command)))
+        values = list(map(float, re.findall(r'[-\d.]+', command)))
         if cmd_type == 'translate':
             dx, dy = values if len(values) == 2 else (values[0], 0)
             points = [(x + dx, y + dy) for x, y in points]
@@ -319,17 +192,18 @@ def apply_transform(transform_str, points):
                            sin_val * (x - cx) + cos_val * (y - cy) + cy) for x, y in points]
             else:
                 points = [(x * cos_val - y * sin_val, x * sin_val + y * cos_val) for x, y in points]
-        # Add more transform types as needed
     return points
+
 
 def calculate_path_length(path):
     verts = path.vertices
     codes = path.codes
     length = 0
     for i in range(1, len(verts)):
-        if codes[i] != 1:  # If not a MOVETO
+        if codes[i] != 1: 
             length += np.linalg.norm(verts[i] - verts[i - 1])
     return length
+
 
 def get_transformed_bbox(element, current_transform=''):
     bbox = None
@@ -363,7 +237,7 @@ def get_transformed_bbox(element, current_transform=''):
         fill_area = np.pi * rx * ry
         stroke_area = 2 * np.pi * (rx + ry) * stroke_width
 
-    elif element.tag.endswith('line'):
+    elif element.tag.split('}')[-1] == 'line':
         x1 = float(element.attrib.get('x1', 0))
         y1 = float(element.attrib.get('y1', 0))
         x2 = float(element.attrib.get('x2', 0))
@@ -375,15 +249,27 @@ def get_transformed_bbox(element, current_transform=''):
         fill_area = 0.0
         stroke_area = length * stroke_width
 
-    elif element.tag.endswith('polyline') or element.tag.endswith('polygon'):
+
+    elif element.tag.split('}')[-1] == 'polyline' or element.tag.split('}')[-1] == 'polygon':
+
         points = element.attrib.get('points', '').strip().split()
         points = [tuple(map(float, point.split(','))) for point in points]
+        if not points:
+            return 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
         xs, ys = zip(*points)
         bbox = [(min(xs), min(ys)), (max(xs), min(ys)), (min(xs), max(ys)), (max(xs), max(ys))]
-        length = sum(np.sqrt((points[i+1][0] - points[i][0]) ** 2 + (points[i+1][1] - points[i][1]) ** 2) for i in range(len(points) - 1))
+        # 计算 polyline 或 polygon 的长度
+        length = sum(np.sqrt((points[i + 1][0] - points[i][0]) ** 2 + (points[i + 1][1] - points[i][1]) ** 2) for i in
+                     range(len(points) - 1))
         if element.tag.endswith('polygon'):
-            fill_area = 0.5 * np.abs(sum(points[i][0] * points[i+1][1] - points[i+1][0] * points[i][1] for i in range(len(points) - 1)))
+            # 如果是 polygon，则计算填充面积，并将最后一段的长度加入
+            fill_area = 0.5 * np.abs(
+                sum(points[i][0] * points[i + 1][1] - points[i + 1][0] * points[i][1] for i in range(len(points) - 1))
+            )
+            # 添加最后一个点与第一个点之间的长度
             length += np.sqrt((points[-1][0] - points[0][0]) ** 2 + (points[-1][1] - points[0][1]) ** 2)
+        else:
+            fill_area = 0.0  # polyline 没有填充面积
         stroke_area = length * stroke_width
 
     elif element.tag.endswith('path'):
@@ -397,26 +283,26 @@ def get_transformed_bbox(element, current_transform=''):
             try:
                 if path.codes is not None and np.all(path.codes == 1):
                     fill_area = path.to_polygons()[0].area
-                    print(fill_area)
                 stroke_area = calculate_path_length(path) * stroke_width
             except AssertionError:
                 stroke_area = calculate_path_length(path) * stroke_width
 
+    # 在 get_transformed_bbox 函数的 text 处理部分使用 parse_font_size 函数
     elif element.tag.endswith('text'):
         text_content = element.text or ''
         bbox = [(0, 0), (0, 0), (0, 0), (0, 0)]
         fill_area = 0.0
         stroke_area = 0.0
         if text_content.strip():
-            # 提取 font-size，并去掉可能的单位，如 'px'
-            font_size_str = element.attrib.get('font-size', '16')
-            font_size = float(re.sub(r'[^\d.]+', '', font_size_str))  # 去掉单位并转换为浮点数
-
+            font_size = parse_font_size(element.attrib.get('font-size', '16px'))
             x = float(element.attrib.get('x', 0))
             y = float(element.attrib.get('y', 0))
-            bbox = [(x, y - font_size), (x + len(text_content) * font_size * 0.6, y - font_size),
-                    (x, y), (x + len(text_content) * font_size * 0.6, y)]
-            fill_area = (bbox[1][0] - bbox[0][0]) * (bbox[2][1] - bbox[0][1])
+            text_width = len(text_content) * font_size * 0.6  # 文本宽度
+            bbox = [(x - text_width / 2, y - font_size),     # 左上角
+                    (x + text_width / 2, y - font_size),     # 右上角
+                    (x - text_width / 2, y),                 # 左下角
+                    (x + text_width / 2, y)]                 # 右下角
+            fill_area = text_width * font_size
 
     if bbox:
         transform = element.attrib.get('transform', None)
@@ -432,6 +318,31 @@ def get_transformed_bbox(element, current_transform=''):
 
     return 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
 
+
+def parse_font_size(font_size_str):
+    # 默认的 font-size，若未设置则默认为 16 px
+    default_font_size = 16.0
+    if isinstance(font_size_str, (float, int)):
+        return float(font_size_str)  # 无单位的情况
+    if font_size_str.endswith('px'):
+        return float(font_size_str.replace('px', ''))
+    elif font_size_str.endswith('pt'):
+        # 将 pt 转换为 px，1 pt ≈ 1.3333 px
+        return float(font_size_str.replace('pt', '')) * 1.3333
+    elif font_size_str.endswith('em'):
+        # em 基于默认 font-size
+        return float(font_size_str.replace('em', '')) * default_font_size
+    elif font_size_str.endswith('%'):
+        # 百分比相对于默认 font-size
+        return float(font_size_str.replace('%', '')) * default_font_size / 100.0
+    else:
+        # 若无单位或无法识别单位，使用默认 font-size
+        try:
+            return float(font_size_str)
+        except ValueError:
+            return default_font_size
+
+
 def is_visible(element):
     if element.attrib.get('display', '') == 'none':
         return False
@@ -439,23 +350,45 @@ def is_visible(element):
         return False
     if float(element.attrib.get('opacity', 1.0)) == 0:
         return False
-    if element.attrib.get('fill', 'currentColor').lower() == 'none' and element.attrib.get('stroke', 'currentColor').lower() == 'none':
+    if element.attrib.get('fill', 'currentColor').lower() == 'none' and element.attrib.get('stroke',
+                                                                                           'currentColor').lower() == 'none':
         return False
     return True
 
+
 def extract_features(element, layer_extractor, current_transform='', current_color='black'):
+    # 过滤不处理的标签
+    filter_tags = {'defs', 'symbol', 'clipPath', 'mask'}  # 根据需求调整过滤的标签
+    tag_without_namespace = element.tag.split('}')[-1]
+    # 如果元素的标签在过滤列表中，视为不可见元素
+    if tag_without_namespace in filter_tags:
+        return None
+
+    # 如果元素不可见，则跳过
     if not is_visible(element):
         return None
 
+    # 累积并传递父元素的 transform
+    parent = element.getparent()
+    while parent is not None:
+        parent_transform = parent.attrib.get('transform', None)
+        if parent_transform:
+            current_transform = f"{parent_transform} {current_transform}"
+        parent = parent.getparent()
+
+    # 标签映射
     tag_mapping = {
-        'circle': 1, 'rect': 2, 'line': 3, 'polyline': 4, 'polygon': 5,
-        'path': 6, 'text': 7, 'g': 8, 'ellipse': 9, 'image': 10, 'use': 11,
-        'defs': 12, 'linearGradient': 13, 'radialGradient': 14, 'stop': 15,
-        'symbol': 16, 'clipPath': 17, 'mask': 18, 'pattern': 19, 'filter': 20,
-        'feGaussianBlur': 21, 'feOffset': 22, 'feBlend': 23, 'feFlood': 24,
-        'feImage': 25, 'feComposite': 26, 'feColorMatrix': 27, 'feMerge': 28,
-        'feMorphology': 29, 'feTurbulence': 30, 'feDisplacementMap': 31, 'unknown': 32
-    }
+    'rect': 0,
+    'circle': 1,
+    'ellipse': 2,
+    'line': 3,
+    'polyline': 4,
+    'polygon': 5,
+    'path': 6,
+    'text': 7,
+    'image': 8
+}
+
     tag = element.tag.split('}')[-1]
     tag_value = tag_mapping.get(tag, 32)
 
@@ -465,7 +398,7 @@ def extract_features(element, layer_extractor, current_transform='', current_col
         element_id_number = element_id_number[0]
     else:
         element_id_number = '0'
-    tag_value = float(f"{tag_value}.{element_id_number:0>4}")
+    # tag_value = float(f"{tag_value}.{element_id_number:0>4}")
 
     opacity = float(element.attrib.get('opacity', 1.0))
     fill = element.attrib.get('fill', 'currentColor')
@@ -480,12 +413,15 @@ def extract_features(element, layer_extractor, current_transform='', current_col
     fill_h, fill_s, fill_l = get_color_features(fill, current_color)
     stroke_h, stroke_s, stroke_l = get_color_features(stroke, current_color)
 
+    # 当前元素的 transform 需要累积传递的 transform
     transform = element.attrib.get('transform', None)
     if transform:
         current_transform = f"{current_transform} {transform}"
 
+    # 计算边界框
     bbox_values = get_transformed_bbox(element, current_transform)
 
+    # 提取层级信息
     layer = layer_extractor.get_node_layers().get(element_id, ['0'])
     layer = [int(part.split('_')[-1]) if part != '0' else 0 for part in layer]
 
@@ -497,18 +433,19 @@ def extract_features(element, layer_extractor, current_transform='', current_col
         layer, *bbox_values
     ]
 
+
 def process_svg(file_path):
     svg_parser = SVGParser(file_path)
     root = svg_parser.run().getroot()
 
     layer_extractor = LayerDataExtractor()
     layer_extractor.extract_layers(root)
-    
+
     features = []
     elements = list(root.iter())
     for element in tqdm(elements, total=len(elements), desc="Processing SVG Elements"):
-        # 确保 element.tag 是字符串类型，避免非字符串对象调用 .split()
-        if isinstance(element.tag, str) and element.tag.split('}')[-1] in {'circle', 'rect', 'line', 'polyline', 'polygon', 'path', 'text', 'ellipse', 'image', 'use'}:
+        if element.tag.split('}')[-1] in {'circle', 'rect', 'line', 'polyline', 'polygon', 'path', 'text', 'ellipse',
+                                          'image', 'use'}:
             feature = extract_features(element, layer_extractor)
             if feature:
                 features.append(feature)
@@ -522,34 +459,71 @@ def save_features(features, output_path):
         'layer', 'bbox_min_top', 'bbox_max_bottom', 'bbox_min_left', 'bbox_max_right',
         'bbox_center_x', 'bbox_center_y', 'bbox_width', 'bbox_height', 'bbox_fill_area', 'bbox_stroke_area'
     ]
-    # columns = [
-    #     'tag_name', 'tag', 'opacity', 'fill_l', 'fill_a', 'fill_b',
-    #     'stroke_l', 'stroke_a', 'stroke_b', 'stroke_width',
-    #     'layer', 'bbox_min_top', 'bbox_max_bottom', 'bbox_min_left', 'bbox_max_right',
-    #     'bbox_center_x', 'bbox_center_y', 'bbox_width', 'bbox_height', 'bbox_fill_area', 'bbox_stroke_area'
-    # ]
     df = pd.DataFrame(features, columns=columns)
     df.to_csv(output_path, index=False)
+
+
+def process_csv_to_json(input_csv_path, output_json_path):
+    df = pd.read_csv(input_csv_path)
+
+    json_data = []
+
+    for index, row in df.iterrows():
+        element_id = row['tag_name']
+
+        fourier_features = row[-20:].tolist()
+
+        json_data.append({
+            "id": element_id,
+            "fourier_features": fourier_features
+        })
+
+    with open(output_json_path, 'w') as json_file:
+        json.dump(json_data, json_file, indent=4)
 
 def save_svg_with_ids(svg_input_path, svg_output_path):
     svgid(svg_input_path, svg_output_path)
 
-def process_directory(input_dir, features_output_dir, svg_output_dir):
-    os.makedirs(features_output_dir, exist_ok=True)
-    os.makedirs(svg_output_dir, exist_ok=True)
-    
-    for file_name in os.listdir(input_dir):
-        if file_name.endswith('.svg'):
-            file_path = os.path.join(input_dir, file_name)
-            output_features_path = os.path.join(features_output_dir, f"{os.path.splitext(file_name)[0]}.csv")
-            output_svg_with_ids_path = os.path.join(svg_output_dir, file_name)
 
-            features = process_svg(file_path)
-            save_features(features, output_features_path)
-            save_svg_with_ids(file_path, output_svg_with_ids_path)
+def process_and_save_features(svg_input_path, output_csv_path, output_svg_with_ids_path):
+    features = process_svg(svg_input_path)
+    save_features(features, output_csv_path)
 
-# 示例使用
-input_dir = './newData'
-features_output_dir = './features_hsl'
+    save_svg_with_ids(svg_input_path, output_svg_with_ids_path)
+
+
+# Ensure the required directories exist
+def ensure_dir(directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+# Main function to process all SVG files in the input directory
+def process_svg_files_in_directory(input_dir, features_output_dir, svg_output_dir):
+    # Ensure output directories exist
+    ensure_dir(features_output_dir)
+    ensure_dir(svg_output_dir)
+
+    # Find all SVG files in the input directory
+    svg_files = glob.glob(os.path.join(input_dir, '*.svg'))
+
+    # Process each SVG file
+    for svg_file in svg_files:
+        # Extract the base filename without extension
+        base_filename = os.path.splitext(os.path.basename(svg_file))[0]
+
+        # Define the output paths for the features CSV and SVG with IDs
+        output_csv_path = os.path.join(features_output_dir, f"{base_filename}_features.csv")
+        output_svg_with_ids_path = os.path.join(svg_output_dir, f"{base_filename}_with_ids.svg")
+
+        # Process the SVG and save both features and modified SVG with IDs
+        print(f"Processing {svg_file}...")
+        process_and_save_features(svg_file, output_csv_path, output_svg_with_ids_path)
+        print(f"Saved features to {output_csv_path}")
+        print(f"Saved SVG with IDs to {output_svg_with_ids_path}")
+
+# Example usage:
+input_dir = './newData3'
+features_output_dir = './features_v4'
 svg_output_dir = './svg_with_ids'
-process_directory(input_dir, features_output_dir, svg_output_dir)
+
+process_svg_files_in_directory(input_dir, features_output_dir, svg_output_dir)

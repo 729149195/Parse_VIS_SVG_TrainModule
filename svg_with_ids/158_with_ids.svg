@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" height="340" style="max-width: 100%; height: auto; font: 10px sans-serif;" viewBox="-70,-30,880,340" width="900" id="svg" tag_name="svg">
+  <g id="g_31" tag_name="svg/g_31">
+    <polygon points="41.5,290.2 703.5,290.2 703.5,220.9 684.2,194.3 664.8,223.3 646,211.6 627.5,223.3 608,181    589.2,176.5 570.2,164.1 552.2,168.3 532.8,164 513.8,193.6 494.8,181.5 475.8,223 457.2,203.8 438,248.5 418.5,215.7 400.2,232.6    381,224.2 362.5,247.3 343.8,251.7 324.8,249.9 305.8,257.9 286.8,237.1 267.5,249.6 248.5,247.3 230.2,251.8 211,250 192.5,266.7    173.2,260.8 154.5,273 135.5,264.3 116.2,262.5 97.5,273.3 78.8,268.9 60,270.7 41.5,274.9  " opacity="0.5" fill="hsl(0, 97%, 52%)" id="polygon_2" tag_name="svg/g_31/polygon_2"/>
+  </g>
+  <g id="g_30" tag_name="svg/g_30">
+    <polygon points="41.8,274 41.8,238.2 60.8,221.5 98.2,228.8 117.5,218.2 136,222.2 154.8,230.5 173.8,218.2    192.7,224.3 211.8,200.5 230.5,202.5 249.5,198 268.2,200.2 287.3,187.7 306.2,208.3 325,195.2 344,204.5 362.8,197 381.8,175.2    400.7,183.2 419.7,173.5 438.5,199.5 457.7,160.8 476.7,174.5 495.3,133.5 514.3,140.5 533.2,110.8 552.3,112.7 570.8,111.2    589.8,123.8 608.5,128.7 627.8,178.2 646.5,167.5 665.3,179.3 684.5,151.3 703.5,160.3 703.5,222 684.5,194.3 665.3,223.3    645.8,210.8 627.3,223.5 608.5,181 589,176.5 570.2,164 551.8,168.3 533.2,164.2 513.7,193.8 495,181.2 476,223.3 457.3,202.7    438.2,248.5 418.8,215.5 400.7,232 381.2,224.2 362.3,247.2 343.7,251.3 324.5,249 305.8,257.7 287,236.7 267.7,249 248.5,247.3    230,251 211.3,249.3 192.3,266.2 173.2,259.8 154.8,272.3 135.7,264.3 116.5,262 97.3,272.5 78.5,268.5 60,270.7  " opacity="0.7" fill="hsl(59, 100%, 56%)" id="polygon_1" tag_name="svg/g_30/polygon_1"/>
+  </g>
+  <g id="g_29" tag_name="svg/g_29">
+    <polygon points="41.6,209.2 41.6,238 60.5,221.4 97.6,228.6 116.8,218 135.6,222.4 154.4,230.8 173.5,218 192,224.2    211.6,200.2 230.5,202.6 249.6,198.1 268.1,200.5 287,187.4 305.6,208.6 324.5,195.5 343.4,204.4 362.9,196.9 381.4,174.9    400,183.1 418.9,173.4 438,199.9 457.1,160.6 475.8,174.2 494.6,132.9 513.2,140.5 532.8,110.9 552.4,112.4 570.4,111 589.9,124.2    608.4,128.2 627.1,178.5 646.2,167.1 664.9,179.6 684.2,151.2 703.5,160.9 703.5,37.7 683.5,85.6 665.1,111 646.2,95.6    627.2,121.8 607.8,79.5 589.2,108.4 570,87.8 551.8,100 532.6,79.4 513.5,112.4 494.6,106.6 476,144 456.6,135.6 437.9,169.6    419.1,143.1 400.2,152.8 381.2,144.8 362.2,167 343,170 324.6,165.2 305,178.4 286.5,160.2 267.6,172 248.2,165.4 229.8,178    210.8,170.1 192.2,200 172.9,193.6 154,206.5 135.2,172.2 116.4,168.6 97.5,204.5 79.1,200.4 60.2,194.5  " opacity="0.7" fill="hsl(231, 97%, 50%)" id="polygon" tag_name="svg/g_29/polygon"/>
+  </g>
+  <g id="g_24" tag_name="svg/g_24">
+    <g id="g_27" tag_name="svg/g_24/g_27">
+      <g id="g_28" tag_name="svg/g_24/g_27/g_28">
+        <polyline points="78.6,224.5 60.1,221.4 42.2,237.6    " fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="polyline_2" tag_name="svg/g_24/g_27/g_28/polyline_2"/>
+        <line x1="97.5" x2="78.6" y1="228.7" y2="224.5" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_141" tag_name="svg/g_24/g_27/g_28/line_141"/>
+        <line x1="116.4" x2="97.5" y1="218.1" y2="228.7" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_140" tag_name="svg/g_24/g_27/g_28/line_140"/>
+        <line x1="135.3" x2="116.4" y1="222.2" y2="218.1" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_139" tag_name="svg/g_24/g_27/g_28/line_139"/>
+        <line x1="154.2" x2="135.3" y1="230.7" y2="222.2" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_138" tag_name="svg/g_24/g_27/g_28/line_138"/>
+        <line x1="173.1" x2="154.2" y1="217.9" y2="230.7" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_137" tag_name="svg/g_24/g_27/g_28/line_137"/>
+        <line x1="192.1" x2="173.1" y1="224.3" y2="217.9" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_136" tag_name="svg/g_24/g_27/g_28/line_136"/>
+        <line x1="211" x2="192.1" y1="200.3" y2="224.3" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_135" tag_name="svg/g_24/g_27/g_28/line_135"/>
+        <line x1="229.9" x2="211" y1="202.4" y2="200.3" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_134" tag_name="svg/g_24/g_27/g_28/line_134"/>
+        <line x1="248.8" x2="229.9" y1="198.1" y2="202.4" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_133" tag_name="svg/g_24/g_27/g_28/line_133"/>
+        <line x1="267.7" x2="248.8" y1="200.3" y2="198.1" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_132" tag_name="svg/g_24/g_27/g_28/line_132"/>
+        <line x1="286.6" x2="267.7" y1="187.5" y2="200.3" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_131" tag_name="svg/g_24/g_27/g_28/line_131"/>
+        <line x1="305.5" x2="286.6" y1="208.8" y2="187.5" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_130" tag_name="svg/g_24/g_27/g_28/line_130"/>
+        <line x1="324.5" x2="305.5" y1="195.3" y2="208.8" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_129" tag_name="svg/g_24/g_27/g_28/line_129"/>
+        <line x1="343.4" x2="324.5" y1="204.4" y2="195.3" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_128" tag_name="svg/g_24/g_27/g_28/line_128"/>
+        <line x1="362.3" x2="343.4" y1="197.1" y2="204.4" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_127" tag_name="svg/g_24/g_27/g_28/line_127"/>
+        <line x1="381.2" x2="362.3" y1="174.7" y2="197.1" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_126" tag_name="svg/g_24/g_27/g_28/line_126"/>
+        <line x1="400.1" x2="381.2" y1="183.2" y2="174.7" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_125" tag_name="svg/g_24/g_27/g_28/line_125"/>
+        <line x1="419" x2="400.1" y1="173.2" y2="183.2" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_124" tag_name="svg/g_24/g_27/g_28/line_124"/>
+        <line x1="437.9" x2="419" y1="200.3" y2="173.2" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_123" tag_name="svg/g_24/g_27/g_28/line_123"/>
+        <line x1="456.8" x2="437.9" y1="160.4" y2="200.3" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_122" tag_name="svg/g_24/g_27/g_28/line_122"/>
+        <line x1="475.8" x2="456.8" y1="174.7" y2="160.4" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_121" tag_name="svg/g_24/g_27/g_28/line_121"/>
+        <line x1="494.7" x2="475.8" y1="133.1" y2="174.7" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_120" tag_name="svg/g_24/g_27/g_28/line_120"/>
+        <line x1="513.6" x2="494.7" y1="140.9" y2="133.1" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_119" tag_name="svg/g_24/g_27/g_28/line_119"/>
+        <line x1="532.5" x2="513.6" y1="111" y2="140.9" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_118" tag_name="svg/g_24/g_27/g_28/line_118"/>
+        <line x1="551.4" x2="532.5" y1="112.3" y2="111" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_117" tag_name="svg/g_24/g_27/g_28/line_117"/>
+        <line x1="570.3" x2="551.4" y1="111" y2="112.3" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_116" tag_name="svg/g_24/g_27/g_28/line_116"/>
+        <line x1="589.2" x2="570.3" y1="123.8" y2="111" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_115" tag_name="svg/g_24/g_27/g_28/line_115"/>
+        <line x1="608.2" x2="589.2" y1="128.1" y2="123.8" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_114" tag_name="svg/g_24/g_27/g_28/line_114"/>
+        <line x1="627.1" x2="608.2" y1="178.7" y2="128.1" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_113" tag_name="svg/g_24/g_27/g_28/line_113"/>
+        <line x1="646" x2="627.1" y1="166.9" y2="178.7" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_112" tag_name="svg/g_24/g_27/g_28/line_112"/>
+        <line x1="664.9" x2="646" y1="179.7" y2="166.9" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_111" tag_name="svg/g_24/g_27/g_28/line_111"/>
+        <line x1="683.8" x2="664.9" y1="150.9" y2="179.7" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_110" tag_name="svg/g_24/g_27/g_28/line_110"/>
+        <line x1="702.7" x2="683.8" y1="160.4" y2="150.9" fill="none" stroke="hsl(69, 100%, 65%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_109" tag_name="svg/g_24/g_27/g_28/line_109"/>
+      </g>
+    </g>
+    <g id="g_25" tag_name="svg/g_24/g_25">
+      <g id="g_26" tag_name="svg/g_24/g_25/g_26">
+        <polyline points="78.6,200.2 60.1,194.1 42.2,209.3    " fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="polyline_1" tag_name="svg/g_24/g_25/g_26/polyline_1"/>
+        <line x1="97.5" x2="78.6" y1="204.4" y2="200.2" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_108" tag_name="svg/g_24/g_25/g_26/line_108"/>
+        <line x1="116.4" x2="97.5" y1="168.4" y2="204.4" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_107" tag_name="svg/g_24/g_25/g_26/line_107"/>
+        <line x1="135.3" x2="116.4" y1="172.5" y2="168.4" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_106" tag_name="svg/g_24/g_25/g_26/line_106"/>
+        <line x1="154.2" x2="135.3" y1="206.4" y2="172.5" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_105" tag_name="svg/g_24/g_25/g_26/line_105"/>
+        <line x1="173.1" x2="154.2" y1="193.6" y2="206.4" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_104" tag_name="svg/g_24/g_25/g_26/line_104"/>
+        <line x1="192.1" x2="173.1" y1="200" y2="193.6" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_103" tag_name="svg/g_24/g_25/g_26/line_103"/>
+        <line x1="211" x2="192.1" y1="170" y2="200" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_102" tag_name="svg/g_24/g_25/g_26/line_102"/>
+        <line x1="229.9" x2="211" y1="178.1" y2="170" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_101" tag_name="svg/g_24/g_25/g_26/line_101"/>
+        <line x1="248.8" x2="229.9" y1="164.8" y2="178.1" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_100" tag_name="svg/g_24/g_25/g_26/line_100"/>
+        <line x1="267.7" x2="248.8" y1="172" y2="164.8" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_99" tag_name="svg/g_24/g_25/g_26/line_99"/>
+        <line x1="286.6" x2="267.7" y1="160.2" y2="172" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_98" tag_name="svg/g_24/g_25/g_26/line_98"/>
+        <line x1="305.5" x2="286.6" y1="178.5" y2="160.2" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_97" tag_name="svg/g_24/g_25/g_26/line_97"/>
+        <line x1="324.5" x2="305.5" y1="165" y2="178.5" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_96" tag_name="svg/g_24/g_25/g_26/line_96"/>
+        <line x1="343.4" x2="324.5" y1="170.1" y2="165" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_95" tag_name="svg/g_24/g_25/g_26/line_95"/>
+        <line x1="362.3" x2="343.4" y1="166.8" y2="170.1" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_94" tag_name="svg/g_24/g_25/g_26/line_94"/>
+        <line x1="381.2" x2="362.3" y1="144.4" y2="166.8" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_93" tag_name="svg/g_24/g_25/g_26/line_93"/>
+        <line x1="400.1" x2="381.2" y1="152.9" y2="144.4" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_92" tag_name="svg/g_24/g_25/g_26/line_92"/>
+        <line x1="419" x2="400.1" y1="142.9" y2="152.9" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_91" tag_name="svg/g_24/g_25/g_26/line_91"/>
+        <line x1="437.9" x2="419" y1="170" y2="142.9" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_90" tag_name="svg/g_24/g_25/g_26/line_90"/>
+        <line x1="456.8" x2="437.9" y1="135.1" y2="170" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_89" tag_name="svg/g_24/g_25/g_26/line_89"/>
+        <line x1="475.8" x2="456.8" y1="144.4" y2="135.1" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_88" tag_name="svg/g_24/g_25/g_26/line_88"/>
+        <line x1="494.7" x2="475.8" y1="106.8" y2="144.4" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_87" tag_name="svg/g_24/g_25/g_26/line_87"/>
+        <line x1="513.6" x2="494.7" y1="112.6" y2="106.8" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_86" tag_name="svg/g_24/g_25/g_26/line_86"/>
+        <line x1="532.5" x2="513.6" y1="79.2" y2="112.6" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_85" tag_name="svg/g_24/g_25/g_26/line_85"/>
+        <line x1="551.4" x2="532.5" y1="100" y2="79.2" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_84" tag_name="svg/g_24/g_25/g_26/line_84"/>
+        <line x1="570.2" x2="551.4" y1="87.8" y2="100" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_83" tag_name="svg/g_24/g_25/g_26/line_83"/>
+        <line x1="589.2" x2="570.2" y1="108.5" y2="87.8" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_82" tag_name="svg/g_24/g_25/g_26/line_82"/>
+        <line x1="608.2" x2="589.2" y1="79.2" y2="108.5" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_81" tag_name="svg/g_24/g_25/g_26/line_81"/>
+        <line x1="627.1" x2="608.2" y1="121.8" y2="79.2" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_80" tag_name="svg/g_24/g_25/g_26/line_80"/>
+        <line x1="646" x2="627.1" y1="95.2" y2="121.8" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_79" tag_name="svg/g_24/g_25/g_26/line_79"/>
+        <line x1="664.9" x2="646" y1="111" y2="95.2" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_78" tag_name="svg/g_24/g_25/g_26/line_78"/>
+        <line x1="683.8" x2="664.9" y1="85.2" y2="111" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_77" tag_name="svg/g_24/g_25/g_26/line_77"/>
+        <line x1="702.7" x2="683.8" y1="37.8" y2="85.2" fill="none" stroke="hsl(247, 93%, 51%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_76" tag_name="svg/g_24/g_25/g_26/line_76"/>
+      </g>
+    </g>
+  </g>
+  <g id="g" tag_name="svg/g">
+    <g id="g_22" tag_name="svg/g/g_22">
+      <g id="g_23" tag_name="svg/g/g_22/g_23">
+        <polyline points="78.9,268.5 60.4,270.4 42.5,274.6    " fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="polyline" tag_name="svg/g/g_22/g_23/polyline"/>
+        <line x1="97.8" x2="78.9" y1="272.7" y2="268.5" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_75" tag_name="svg/g/g_22/g_23/line_75"/>
+        <line x1="116.7" x2="97.8" y1="262.1" y2="272.7" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_74" tag_name="svg/g/g_22/g_23/line_74"/>
+        <line x1="135.6" x2="116.7" y1="264.2" y2="262.1" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_73" tag_name="svg/g/g_22/g_23/line_73"/>
+        <line x1="154.5" x2="135.6" y1="272.7" y2="264.2" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_72" tag_name="svg/g/g_22/g_23/line_72"/>
+        <line x1="173.4" x2="154.5" y1="259.9" y2="272.7" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_71" tag_name="svg/g/g_22/g_23/line_71"/>
+        <line x1="192.3" x2="173.4" y1="266.3" y2="259.9" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_70" tag_name="svg/g/g_22/g_23/line_70"/>
+        <line x1="211.3" x2="192.3" y1="249.3" y2="266.3" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_69" tag_name="svg/g/g_22/g_23/line_69"/>
+        <line x1="230.2" x2="211.3" y1="251.4" y2="249.3" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_68" tag_name="svg/g/g_22/g_23/line_68"/>
+        <line x1="249.1" x2="230.2" y1="247.1" y2="251.4" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_67" tag_name="svg/g/g_22/g_23/line_67"/>
+        <line x1="268" x2="249.1" y1="249.3" y2="247.1" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_66" tag_name="svg/g/g_22/g_23/line_66"/>
+        <line x1="286.9" x2="268" y1="236.5" y2="249.3" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_65" tag_name="svg/g/g_22/g_23/line_65"/>
+        <line x1="305.8" x2="286.9" y1="257.8" y2="236.5" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_64" tag_name="svg/g/g_22/g_23/line_64"/>
+        <line x1="324.7" x2="305.8" y1="249.3" y2="257.8" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_63" tag_name="svg/g/g_22/g_23/line_63"/>
+        <line x1="343.7" x2="324.7" y1="251.4" y2="249.3" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_62" tag_name="svg/g/g_22/g_23/line_62"/>
+        <line x1="362.6" x2="343.7" y1="247.1" y2="251.4" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_61" tag_name="svg/g/g_22/g_23/line_61"/>
+        <line x1="381.5" x2="362.6" y1="223.7" y2="247.1" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_60" tag_name="svg/g/g_22/g_23/line_60"/>
+        <line x1="400.4" x2="381.5" y1="232.2" y2="223.7" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_59" tag_name="svg/g/g_22/g_23/line_59"/>
+        <line x1="419.3" x2="400.4" y1="215.2" y2="232.2" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_58" tag_name="svg/g/g_22/g_23/line_58"/>
+        <line x1="438.2" x2="419.3" y1="249.3" y2="215.2" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_57" tag_name="svg/g/g_22/g_23/line_57"/>
+        <line x1="457.1" x2="438.2" y1="202.4" y2="249.3" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_56" tag_name="svg/g/g_22/g_23/line_56"/>
+        <line x1="476" x2="457.1" y1="223.7" y2="202.4" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_55" tag_name="svg/g/g_22/g_23/line_55"/>
+        <line x1="495" x2="476" y1="181.1" y2="223.7" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_54" tag_name="svg/g/g_22/g_23/line_54"/>
+        <line x1="513.9" x2="495" y1="193.9" y2="181.1" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_53" tag_name="svg/g/g_22/g_23/line_53"/>
+        <line x1="532.8" x2="513.9" y1="164" y2="193.9" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_52" tag_name="svg/g/g_22/g_23/line_52"/>
+        <line x1="551.7" x2="532.8" y1="168.3" y2="164" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_51" tag_name="svg/g/g_22/g_23/line_51"/>
+        <line x1="570.6" x2="551.7" y1="164" y2="168.3" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_50" tag_name="svg/g/g_22/g_23/line_50"/>
+        <line x1="589.5" x2="570.6" y1="176.8" y2="164" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_49" tag_name="svg/g/g_22/g_23/line_49"/>
+        <line x1="608.4" x2="589.5" y1="181.1" y2="176.8" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_48" tag_name="svg/g/g_22/g_23/line_48"/>
+        <line x1="627.4" x2="608.4" y1="223.7" y2="181.1" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_47" tag_name="svg/g/g_22/g_23/line_47"/>
+        <line x1="646.3" x2="627.4" y1="210.9" y2="223.7" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_46" tag_name="svg/g/g_22/g_23/line_46"/>
+        <line x1="665.2" x2="646.3" y1="223.7" y2="210.9" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_45" tag_name="svg/g/g_22/g_23/line_45"/>
+        <line x1="684.1" x2="665.2" y1="193.9" y2="223.7" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_44" tag_name="svg/g/g_22/g_23/line_44"/>
+        <line x1="703" x2="684.1" y1="220.5" y2="193.9" fill="none" stroke="hsl(0, 100%, 48%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="line_43" tag_name="svg/g/g_22/g_23/line_43"/>
+      </g>
+    </g>
+    <line x1="41.5" x2="704" y1="290" y2="290" fill="none" stroke="hsl(0, 0%, 38%)" id="line_42" tag_name="svg/g/line_42"/>
+    <g id="g_20" tag_name="svg/g/g_20">
+      <g id="g_21" tag_name="svg/g/g_20/g_21">
+        <line x1="60.4" x2="60.4" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_41" tag_name="svg/g/g_20/g_21/line_41"/>
+        <line x1="79.3" x2="79.3" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_40" tag_name="svg/g/g_20/g_21/line_40"/>
+        <line x1="98.2" x2="98.2" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_39" tag_name="svg/g/g_20/g_21/line_39"/>
+        <line x1="117.1" x2="117.1" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_38" tag_name="svg/g/g_20/g_21/line_38"/>
+        <line x1="136.1" x2="136.1" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_37" tag_name="svg/g/g_20/g_21/line_37"/>
+        <line x1="155" x2="155" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_36" tag_name="svg/g/g_20/g_21/line_36"/>
+        <line x1="173.9" x2="173.9" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_35" tag_name="svg/g/g_20/g_21/line_35"/>
+        <line x1="192.8" x2="192.8" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_34" tag_name="svg/g/g_20/g_21/line_34"/>
+        <line x1="211.7" x2="211.7" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_33" tag_name="svg/g/g_20/g_21/line_33"/>
+        <line x1="230.6" x2="230.6" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_32" tag_name="svg/g/g_20/g_21/line_32"/>
+        <line x1="249.5" x2="249.5" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_31" tag_name="svg/g/g_20/g_21/line_31"/>
+        <line x1="268.5" x2="268.5" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_30" tag_name="svg/g/g_20/g_21/line_30"/>
+        <line x1="287.4" x2="287.4" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_29" tag_name="svg/g/g_20/g_21/line_29"/>
+        <line x1="306.3" x2="306.3" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_28" tag_name="svg/g/g_20/g_21/line_28"/>
+        <line x1="325.2" x2="325.2" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_27" tag_name="svg/g/g_20/g_21/line_27"/>
+        <line x1="344.1" x2="344.1" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_26" tag_name="svg/g/g_20/g_21/line_26"/>
+        <line x1="363" x2="363" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_25" tag_name="svg/g/g_20/g_21/line_25"/>
+        <line x1="381.9" x2="381.9" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_24" tag_name="svg/g/g_20/g_21/line_24"/>
+        <line x1="400.9" x2="400.9" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_23" tag_name="svg/g/g_20/g_21/line_23"/>
+        <line x1="419.8" x2="419.8" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_22" tag_name="svg/g/g_20/g_21/line_22"/>
+        <line x1="438.7" x2="438.7" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_21" tag_name="svg/g/g_20/g_21/line_21"/>
+        <line x1="457.6" x2="457.6" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_20" tag_name="svg/g/g_20/g_21/line_20"/>
+        <line x1="476.5" x2="476.5" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_19" tag_name="svg/g/g_20/g_21/line_19"/>
+        <line x1="495.4" x2="495.4" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_18" tag_name="svg/g/g_20/g_21/line_18"/>
+        <line x1="514.3" x2="514.3" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_17" tag_name="svg/g/g_20/g_21/line_17"/>
+        <line x1="533.3" x2="533.3" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_16" tag_name="svg/g/g_20/g_21/line_16"/>
+        <line x1="552.2" x2="552.2" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_15" tag_name="svg/g/g_20/g_21/line_15"/>
+        <line x1="571.1" x2="571.1" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_14" tag_name="svg/g/g_20/g_21/line_14"/>
+        <line x1="590" x2="590" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_13" tag_name="svg/g/g_20/g_21/line_13"/>
+        <line x1="608.9" x2="608.9" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_12" tag_name="svg/g/g_20/g_21/line_12"/>
+        <line x1="627.8" x2="627.8" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_11" tag_name="svg/g/g_20/g_21/line_11"/>
+        <line x1="646.7" x2="646.7" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_10" tag_name="svg/g/g_20/g_21/line_10"/>
+        <line x1="665.7" x2="665.7" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_9" tag_name="svg/g/g_20/g_21/line_9"/>
+        <line x1="684.6" x2="684.6" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_8" tag_name="svg/g/g_20/g_21/line_8"/>
+        <line x1="703.5" x2="703.5" y1="294.2" y2="290.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_7" tag_name="svg/g/g_20/g_21/line_7"/>
+      </g>
+    </g>
+    <g id="g_12" tag_name="svg/g/g_12">
+      <g id="g_19" tag_name="svg/g/g_12/g_19">
+        <path d="M32.3,290.2c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,287,32.3,288.2,32.3,290.2z M28.8,290.3c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,287.6,28.8,288.6,28.8,290.3z" fill="hsl(0, 0%, 47%)" id="path_17" tag_name="svg/g/g_12/g_19/path_17"/>
+      </g>
+      <g id="g_18" tag_name="svg/g/g_12/g_18">
+        <path d="M26.7,242.5h-2.5l-0.2,1.7c0.1,0,0.3,0,0.5,0c0.5,0,1,0.1,1.4,0.3c0.5,0.3,0.9,0.8,0.9,1.7     c0,1.3-1,2.2-2.4,2.2c-0.7,0-1.3-0.2-1.6-0.4l0.2-0.7c0.3,0.2,0.8,0.4,1.4,0.4c0.8,0,1.5-0.5,1.5-1.4c0-0.8-0.6-1.4-1.9-1.4     c-0.4,0-0.7,0-0.9,0.1l0.4-3.1h3.1V242.5z" fill="hsl(0, 0%, 47%)" id="path_16" tag_name="svg/g/g_12/g_18/path_16"/>
+        <path d="M32.3,244.9c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,241.6,32.3,242.8,32.3,244.9z M28.8,245c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,242.3,28.8,243.2,28.8,245z" fill="hsl(0, 0%, 47%)" id="path_15" tag_name="svg/g/g_12/g_18/path_15"/>
+      </g>
+      <g id="g_17" tag_name="svg/g/g_12/g_17">
+        <path d="M19.6,197.2L19.6,197.2l-1.1,0.6l-0.2-0.7l1.4-0.8h0.7v6.5h-0.8V197.2z" fill="hsl(0, 0%, 47%)" id="path_14" tag_name="svg/g/g_12/g_17/path_14"/>
+        <path d="M27.2,199.6c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C26.4,196.3,27.2,197.5,27.2,199.6z M23.6,199.7c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C24.2,197,23.6,197.9,23.6,199.7z" fill="hsl(0, 0%, 47%)" id="path_13" tag_name="svg/g/g_12/g_17/path_13"/>
+        <path d="M32.3,199.6c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,196.3,32.3,197.5,32.3,199.6z M28.8,199.7c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,197,28.8,197.9,28.8,199.7z" fill="hsl(0, 0%, 47%)" id="path_12" tag_name="svg/g/g_12/g_17/path_12"/>
+      </g>
+      <g id="g_16" tag_name="svg/g/g_12/g_16">
+        <path d="M19.6,151.9L19.6,151.9l-1.1,0.6l-0.2-0.7l1.4-0.8h0.7v6.5h-0.8V151.9z" fill="hsl(0, 0%, 47%)" id="path_11" tag_name="svg/g/g_12/g_16/path_11"/>
+        <path d="M26.7,151.8h-2.5l-0.2,1.7c0.1,0,0.3,0,0.5,0c0.5,0,1,0.1,1.4,0.3c0.5,0.3,0.9,0.8,0.9,1.7     c0,1.3-1,2.2-2.4,2.2c-0.7,0-1.3-0.2-1.6-0.4l0.2-0.7c0.3,0.2,0.8,0.4,1.4,0.4c0.8,0,1.5-0.5,1.5-1.4c0-0.8-0.6-1.4-1.9-1.4     c-0.4,0-0.7,0-0.9,0.1l0.4-3.1h3.1V151.8z" fill="hsl(0, 0%, 47%)" id="path_10" tag_name="svg/g/g_12/g_16/path_10"/>
+        <path d="M32.3,154.2c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,151,32.3,152.2,32.3,154.2z M28.8,154.3c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,151.6,28.8,152.6,28.8,154.3z" fill="hsl(0, 0%, 47%)" id="path_9" tag_name="svg/g/g_12/g_16/path_9"/>
+      </g>
+      <g id="g_15" tag_name="svg/g/g_12/g_15">
+        <path d="M17.7,112.2v-0.5l0.7-0.7c1.7-1.6,2.4-2.4,2.4-3.4c0-0.7-0.3-1.3-1.3-1.3c-0.6,0-1.1,0.3-1.4,0.5l-0.3-0.6     c0.4-0.4,1.1-0.7,1.8-0.7c1.4,0,2,1,2,1.9c0,1.2-0.9,2.2-2.2,3.5l-0.5,0.5v0h2.9v0.7H17.7z" fill="hsl(0, 0%, 47%)" id="path_8" tag_name="svg/g/g_12/g_15/path_8"/>
+        <path d="M27.2,108.9c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C26.4,105.6,27.2,106.8,27.2,108.9z M23.6,109c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C24.2,106.3,23.6,107.2,23.6,109z" fill="hsl(0, 0%, 47%)" id="path_7" tag_name="svg/g/g_12/g_15/path_7"/>
+        <path d="M32.3,108.9c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,105.6,32.3,106.8,32.3,108.9z M28.8,109c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,106.3,28.8,107.2,28.8,109z" fill="hsl(0, 0%, 47%)" id="path_6" tag_name="svg/g/g_12/g_15/path_6"/>
+      </g>
+      <g id="g_14" tag_name="svg/g/g_12/g_14">
+        <path d="M17.7,66.9v-0.5l0.7-0.7c1.7-1.6,2.4-2.4,2.4-3.4c0-0.7-0.3-1.3-1.3-1.3c-0.6,0-1.1,0.3-1.4,0.5l-0.3-0.6     c0.4-0.4,1.1-0.7,1.8-0.7c1.4,0,2,1,2,1.9c0,1.2-0.9,2.2-2.2,3.5l-0.5,0.5v0h2.9v0.7H17.7z" fill="hsl(0, 0%, 47%)" id="path_5" tag_name="svg/g/g_12/g_14/path_5"/>
+        <path d="M26.7,61.1h-2.5L24,62.8c0.1,0,0.3,0,0.5,0c0.5,0,1,0.1,1.4,0.4c0.5,0.3,0.9,0.8,0.9,1.7     c0,1.3-1,2.2-2.4,2.2c-0.7,0-1.3-0.2-1.6-0.4l0.2-0.7c0.3,0.2,0.8,0.4,1.4,0.4c0.8,0,1.5-0.5,1.5-1.4c0-0.8-0.6-1.4-1.9-1.4     c-0.4,0-0.7,0-0.9,0.1l0.4-3.1h3.1V61.1z" fill="hsl(0, 0%, 47%)" id="path_4" tag_name="svg/g/g_12/g_14/path_4"/>
+        <path d="M32.3,63.6c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,60.3,32.3,61.5,32.3,63.6z M28.8,63.7c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,61,28.8,61.9,28.8,63.7z" fill="hsl(0, 0%, 47%)" id="path_3" tag_name="svg/g/g_12/g_14/path_3"/>
+      </g>
+      <g id="g_13" tag_name="svg/g/g_12/g_13">
+        <path d="M17.9,20.6c0.2,0.2,0.8,0.4,1.4,0.4c1.1,0,1.5-0.7,1.5-1.3c0-0.9-0.8-1.3-1.7-1.3h-0.5v-0.7h0.5     c0.6,0,1.4-0.3,1.4-1.1c0-0.5-0.3-1-1.1-1c-0.5,0-1,0.2-1.3,0.4l-0.2-0.6c0.3-0.2,1-0.5,1.7-0.5c1.3,0,1.9,0.8,1.9,1.5     c0,0.7-0.4,1.2-1.2,1.5v0c0.8,0.2,1.4,0.8,1.4,1.7c0,1-0.8,1.9-2.4,1.9c-0.7,0-1.4-0.2-1.7-0.4L17.9,20.6z" fill="hsl(0, 0%, 47%)" id="path_2" tag_name="svg/g/g_12/g_13/path_2"/>
+        <path d="M27.2,18.2c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C26.4,15,27.2,16.2,27.2,18.2z M23.6,18.3c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C24.2,15.6,23.6,16.6,23.6,18.3z" fill="hsl(0, 0%, 47%)" id="path_1" tag_name="svg/g/g_12/g_13/path_1"/>
+        <path d="M32.3,18.2c0,2.2-0.8,3.4-2.3,3.4c-1.3,0-2.1-1.2-2.1-3.3c0-2.2,0.9-3.4,2.3-3.4     C31.5,15,32.3,16.2,32.3,18.2z M28.8,18.3c0,1.7,0.5,2.6,1.3,2.6c0.9,0,1.3-1,1.3-2.7c0-1.6-0.4-2.6-1.3-2.6     C29.3,15.6,28.8,16.6,28.8,18.3z" fill="hsl(0, 0%, 47%)" id="path" tag_name="svg/g/g_12/g_13/path"/>
+      </g>
+    </g>
+    <line x1="41.5" x2="41.5" y1="293" y2="19" fill="none" stroke="hsl(0, 0%, 38%)" id="line_6" tag_name="svg/g/line_6"/>
+    <g id="g_11" tag_name="svg/g/g_11">
+      <line x1="35.9" x2="41.9" y1="245.1" y2="245.1" fill="none" stroke="hsl(0, 0%, 38%)" id="line_5" tag_name="svg/g/g_11/line_5"/>
+      <line x1="35.9" x2="41.9" y1="199.7" y2="199.7" fill="none" stroke="hsl(0, 0%, 38%)" id="line_4" tag_name="svg/g/g_11/line_4"/>
+      <line x1="35.9" x2="41.9" y1="154.4" y2="154.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line_3" tag_name="svg/g/g_11/line_3"/>
+      <line x1="35.9" x2="41.9" y1="109.1" y2="109.1" fill="none" stroke="hsl(0, 0%, 38%)" id="line_2" tag_name="svg/g/g_11/line_2"/>
+      <line x1="35.9" x2="41.9" y1="63.7" y2="63.7" fill="none" stroke="hsl(0, 0%, 38%)" id="line_1" tag_name="svg/g/g_11/line_1"/>
+      <line x1="35.9" x2="41.9" y1="18.4" y2="18.4" fill="none" stroke="hsl(0, 0%, 38%)" id="line" tag_name="svg/g/g_11/line"/>
+    </g>
+    <g id="g_10" tag_name="svg/g/g_10">
+</g>
+    <g id="g_9" tag_name="svg/g/g_9">
+</g>
+    <g id="g_8" tag_name="svg/g/g_8">
+</g>
+    <g id="g_7" tag_name="svg/g/g_7">
+</g>
+    <g id="g_6" tag_name="svg/g/g_6">
+</g>
+    <g id="g_5" tag_name="svg/g/g_5">
+</g>
+    <g id="g_4" tag_name="svg/g/g_4">
+</g>
+    <g id="g_3" tag_name="svg/g/g_3">
+</g>
+    <g id="g_2" tag_name="svg/g/g_2">
+</g>
+    <g id="g_1" tag_name="svg/g/g_1">
+</g>
+  </g>
+</svg>

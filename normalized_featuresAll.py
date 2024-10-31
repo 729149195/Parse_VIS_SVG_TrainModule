@@ -3,78 +3,129 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
-def normalize_tag(tag, df):
-    if df['tag'].min() != df['tag'].max():
-        return (tag - df['tag'].min()) / (df['tag'].max() - df['tag'].min())
-    else:
-        return 1.0
-
-def normalize_opacity(opacity):
-    return opacity / 10
-
-def normalize_color(value):
-    return value / 360.0
-
-def normalize_stroke_width(stroke_width, df):
-    if df['stroke_width'].max() != df['stroke_width'].min():
-        return (stroke_width - df['stroke_width'].min()) / (df['stroke_width'].max() - df['stroke_width'].min())
-    else:
-        return 1.0
-
-def normalize_layer(layer):
-    layer_list = eval(layer)
-    if not layer_list:
-        return 0.0
-    max_value = max(layer_list)
-    if max_value == 0:
-        return 0.0
-    normalized_layer_list = [x / max_value for x in layer_list]
-    normalized_layer_value = sum([val * (0.1 ** idx) for idx, val in enumerate(normalized_layer_list)])
-    return normalized_layer_value
-
-def min_max_normalize(series):
-    if series.min() != series.max():
-        return (series - series.min()) / (series.max() - series.min())
-    else:
-        return pd.Series([1.0] * len(series), index=series.index)
-
-def normalize_bbox(value):
-    return np.log1p(value)
-
-def normalize_area(value):
-    return np.log1p(value)
-
-def normalize_features(input_path, output_path):
+def nalize_features(input_path, output_path):
     df = pd.read_csv(input_path)
 
-    # 替换 -1 为 0.000001
+    # 替换 -1 为一个小正数
     df.replace(-1, 0.000001, inplace=True)
 
-    # 归一化每一列
-    df['tag'] = df['tag'].apply(lambda tag: normalize_tag(tag, df))
-    df['opacity'] = df['opacity'].apply(normalize_opacity)
-    df['fill_h'] = df['fill_h'].map(normalize_color)
-    df['stroke_h'] = df['stroke_h'].map(normalize_color)
-    df[['fill_s', 'fill_l', 'stroke_s', 'stroke_l']] = df[['fill_s', 'fill_l', 'stroke_s', 'stroke_l']] / 100.0
-    df['stroke_width'] = df['stroke_width'].apply(lambda sw: normalize_stroke_width(sw, df)) * 0.1
-    df['layer'] = df['layer'].apply(normalize_layer)
+    # 计算 svg_min_left, svg_max_right, svg_min_top, svg_max_bottom
+    svg_min_left = df['bbox_min_left'].min()
+    svg_max_right = df['bbox_max_right'].max()
+    svg_min_top = df['bbox_min_top'].min()
+    svg_max_bottom = df['bbox_max_bottom'].max()
 
-    # 使用 Min-Max 归一化处理 bbox 相关特征
-    bbox_columns = ['bbox_min_top', 'bbox_max_bottom', 'bbox_min_left', 'bbox_max_right', 'bbox_center_x', 'bbox_center_y', 'bbox_width', 'bbox_height']
-    df[bbox_columns] = df[bbox_columns].apply(min_max_normalize)
+    # 计算 svg_width, svg_height, svg_area
+    svg_width = svg_max_right - svg_min_left
+    svg_height = svg_max_bottom - svg_min_top
+    svg_area = svg_width * svg_height
 
-    df['bbox_fill_area'] = df['bbox_fill_area'].map(normalize_area)
-    df['bbox_stroke_area'] = df['bbox_stroke_area'].map(normalize_area)
+    # 1. 标签类型归一化
+    df['tag'] = df['tag'] / 100.0
 
-    # 归一化后，再次应用 Min-Max 归一化，确保范围在 0 到 1 之间，并处理最小值等于最大值的情况
-    df[['bbox_fill_area', 'bbox_stroke_area']] = df[['bbox_fill_area', 'bbox_stroke_area']].apply(min_max_normalize)
+    # 2. 不透明度归一化
+    df['opacity'] = np.sqrt(df['opacity'])
 
-    # 对 bbox_stroke_area 应用权重因子，降低其影响力
-    stroke_area_weight = 0.3
-    df['bbox_stroke_area'] = df['bbox_stroke_area'] * stroke_area_weight
+    # 3. 颜色归一化
+    # 色相归一化
+    # df['fill_h_n'] = df['fill_h'] / 360.0
+    # df['stroke_h_n'] = df['stroke_h'] / 360.0
+    
+    df['fill_h_cos'] = np.cos(2 * np.pi * df['fill_h'] / 360)
+    df['fill_h_sin'] = np.sin(2 * np.pi * df['fill_h'] / 360)
+    
+    df['stroke_h_cos'] = np.cos(2 * np.pi * df['stroke_h'] / 360)
+    df['stroke_h_sin'] = np.sin(2 * np.pi * df['stroke_h'] / 360)
+    
+    # 饱和度归一化
+    df['fill_s_n'] = df['fill_s'] / 100.0
+    df['stroke_s_n'] = df['stroke_s'] / 100.0
 
-    # 保存归一化后的特征数据
-    df.to_csv(output_path, index=False)
+    # 亮度归一化
+    df['fill_l_n'] = df['fill_l'] / 100.0
+    df['stroke_l_n'] = df['stroke_l'] / 100.0
+    
+    # 6. 边界框位置和尺寸归一化
+    svg_center_x = (svg_min_left + svg_max_right) / 2.0
+    svg_center_y = (svg_min_top + svg_max_bottom) / 2.0
+
+    df['bbox_min_left_n'] = (df['bbox_min_left'] - svg_center_x) / (svg_width / 2.0)
+    df['bbox_max_right_n'] = (df['bbox_max_right'] - svg_center_x) / (svg_width / 2.0)
+    df['bbox_min_top_n'] = (df['bbox_min_top'] - svg_center_y) / (svg_height / 2.0)
+    df['bbox_max_bottom_n'] = (df['bbox_max_bottom'] - svg_center_y) / (svg_height / 2.0)
+
+    df['bbox_center_x_n'] = (df['bbox_center_x'] - svg_center_x) / (svg_width / 2.0)
+    df['bbox_center_y_n'] = (df['bbox_center_y'] - svg_center_y) / (svg_height / 2.0)
+
+    df['bbox_width_n'] = df['bbox_width'] / svg_width
+    df['bbox_height_n'] = df['bbox_height'] / svg_height
+
+    # 7. 面积归一化
+    df['bbox_fill_area'] = np.log1p(df['bbox_fill_area']) / np.log1p(svg_area)
+    df['bbox_stroke_area'] = (np.log1p(df['bbox_stroke_area']) / np.log1p(svg_area)) * 0.3  # w_stroke = 0.3
+
+    # # 计算颜色显著性
+    # w_H, w_S, w_L = 0.4, 0.3, 0.3  # 权重
+    # H_ref = 0.0  # 红色为参考色相
+
+    # sigma = 0.25  # 控制色相显著性曲线宽度的参数
+
+    # # 填充色显著性
+    # df['fill_hue_sal'] = df['fill_h_n'].apply(lambda h: compute_hue_sal(h, H_ref, sigma))
+    # df['fill_saturation_sal'] = df['fill_s_n']
+    # df['fill_lightness_sal'] = 1 - abs(df['fill_l_n'] - 0.5) / 0.5
+    # df['fill_color_sal'] = (w_H * df['fill_hue_sal'] +
+    #                              w_S * df['fill_saturation_sal'] +
+    #                              w_L * df['fill_lightness_sal'])
+
+    # # 描边色显著性
+    # df['stroke_hue_sal'] = df['stroke_h_n'].apply(lambda h: compute_hue_sal(h, H_ref, sigma))
+    # df['stroke_saturation_sal'] = df['stroke_s_n']
+    # df['stroke_lightness_sal'] = 1 - abs(df['stroke_l_n'] - 0.5) / 0.5
+    # df['stroke_color_sal'] = (w_H * df['stroke_hue_sal'] +
+    #                                w_S * df['stroke_saturation_sal'] +
+    #                                w_L * df['stroke_lightness_sal'])
+
+    # 4. 描边宽度归一化
+    max_stroke_width = df['stroke_width'].max() if df['stroke_width'].max() > 0 else 1.0
+    df['stroke_width'] = np.sqrt(df['stroke_width'] / max_stroke_width)
+
+    # 5. 图层显著性归一化
+    lambda_decay = 0.5  # 衰减系数
+    df['layer'] = df['layer'].apply(eval)
+    max_depth = df['layer'].apply(len).max()
+    max_indices_per_level = [0] * max_depth
+    for i in range(max_depth):
+        max_indices_per_level[i] = df['layer'].apply(lambda x: x[i] if i < len(x) else 0).max()
+
+    def compute_layer_sal(layer):
+        sal = 0.0
+        for i, idx in enumerate(layer):
+            max_idx = max_indices_per_level[i]
+            if max_idx > 0:
+                n_idx = 1 - (idx / max_idx)
+                sal += n_idx * (lambda_decay ** i)
+            else:
+                sal += 0
+        return sal
+    
+    df['layer_sal'] = df['layer'].apply(compute_layer_sal)
+
+    # 8. 保存归一化后的特征数据
+    n_columns = [
+        'tag_name', 'tag', 'opacity',
+        'fill_h_cos', 'fill_h_sin',  'fill_s_n', 'fill_l_n',
+        'stroke_h_cos', 'stroke_h_sin', 'stroke_s_n', 'stroke_l_n', 'stroke_width',
+        'layer_sal', 'bbox_min_left_n', 'bbox_max_right_n', 'bbox_min_top_n',
+        'bbox_max_bottom_n', 'bbox_center_x_n', 'bbox_center_y_n',
+        'bbox_width_n', 'bbox_height_n', 'bbox_fill_area', 'bbox_stroke_area'
+    ]
+    df[n_columns].to_csv(output_path, index=False)
+
+def compute_hue_sal(h_n, H_ref=0.0, sigma=0.25):
+    delta_h = min(abs(h_n - H_ref), 1 - abs(h_n - H_ref))
+    hue_sal = np.exp(- (delta_h / sigma) ** 2)
+    return hue_sal
 
 def process_all_features(input_dir, output_dir):
     os.makedirs(output_dir, exist_ok=True)
@@ -84,9 +135,9 @@ def process_all_features(input_dir, output_dir):
     for file_name in tqdm(files, desc="Processing files"):
         input_path = os.path.join(input_dir, file_name)
         output_path = os.path.join(output_dir, file_name)
-        normalize_features(input_path, output_path)
+        nalize_features(input_path, output_path)
 
 # 示例使用
-input_dir = './features_hsl'
-output_dir = './normalized_hsl_features'
+input_dir = './features_v4'
+output_dir = './n_v4_features'
 process_all_features(input_dir, output_dir)

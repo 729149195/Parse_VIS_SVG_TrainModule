@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" height="340" id="svg" style="max-width: 100%; height: auto; font: 10px sans-serif;" viewBox="-550,-100,900,300" width="900" tag_name="svg">
+  <line x1="-400" x2="250" y1="180" y2="180" stroke="hsl(0, 0%, 0%)" stroke-width="2" id="line_1" tag_name="svg/line_1"/>
+  <line x1="-400" x2="-400" y1="180" y2="-40" stroke="hsl(0, 0%, 0%)" stroke-width="2" id="line" tag_name="svg/line"/>
+  <rect height="100" width="20" x="-350" y="80" fill="hsl(217, 69%, 57%)" id="rect_11" tag_name="svg/rect_11"/>
+  <text text-anchor="middle" x="-340" y="60" fill="hsl(0, 0%, 0%)" id="text_17" tag_name="svg/text_17">xx</text>
+  <rect height="80" width="20" x="-325" y="100" fill="hsl(5, 82%, 51%)" id="rect_10" tag_name="svg/rect_10"/>
+  <text text-anchor="middle" x="-315" y="80" fill="hsl(0, 0%, 0%)" id="text_16" tag_name="svg/text_16">xx</text>
+  <text text-anchor="middle" x="-337.5" y="200" fill="hsl(0, 0%, 21%)" id="text_15" tag_name="svg/text_15">xxxxxxxxx</text>
+  <rect height="150" width="20" x="-250" y="30" fill="hsl(217, 69%, 57%)" id="rect_9" tag_name="svg/rect_9"/>
+  <text text-anchor="middle" x="-240" y="10" fill="hsl(0, 0%, 0%)" id="text_14" tag_name="svg/text_14">xx</text>
+  <rect height="120" width="20" x="-225" y="60" fill="hsl(5, 82%, 51%)" id="rect_8" tag_name="svg/rect_8"/>
+  <text text-anchor="middle" x="-215" y="40" fill="hsl(0, 0%, 0%)" id="text_13" tag_name="svg/text_13">xx</text>
+  <text text-anchor="middle" x="-237.5" y="200" fill="hsl(0, 0%, 21%)" id="text_12" tag_name="svg/text_12">xxxxxxxxx</text>
+  <rect height="200" width="20" x="-150" y="-20" fill="hsl(217, 69%, 57%)" id="rect_7" tag_name="svg/rect_7"/>
+  <text text-anchor="middle" x="-140" y="-40" fill="hsl(0, 0%, 0%)" id="text_11" tag_name="svg/text_11">xx</text>
+  <rect height="160" width="20" x="-125" y="20" fill="hsl(5, 82%, 51%)" id="rect_6" tag_name="svg/rect_6"/>
+  <text text-anchor="middle" x="-115" y="0" fill="hsl(0, 0%, 0%)" id="text_10" tag_name="svg/text_10">xx</text>
+  <text text-anchor="middle" x="-137.5" y="200" fill="hsl(0, 0%, 21%)" id="text_9" tag_name="svg/text_9">xxxxxxxxx</text>
+  <rect height="130" width="20" x="-50" y="50" fill="hsl(217, 69%, 57%)" id="rect_5" tag_name="svg/rect_5"/>
+  <text text-anchor="middle" x="-40" y="30" fill="hsl(0, 0%, 0%)" id="text_8" tag_name="svg/text_8">xx</text>
+  <rect height="110" width="20" x="-25" y="70" fill="hsl(5, 82%, 51%)" id="rect_4" tag_name="svg/rect_4"/>
+  <text text-anchor="middle" x="-15" y="50" fill="hsl(0, 0%, 0%)" id="text_7" tag_name="svg/text_7">xx</text>
+  <text text-anchor="middle" x="-37.5" y="200" fill="hsl(0, 0%, 21%)" id="text_6" tag_name="svg/text_6">xxxxxxxxx</text>
+  <rect height="170" width="20" x="50" y="10" fill="hsl(217, 69%, 57%)" id="rect_3" tag_name="svg/rect_3"/>
+  <text text-anchor="middle" x="60" y="-10" fill="hsl(0, 0%, 0%)" id="text_5" tag_name="svg/text_5">xx</text>
+  <rect height="140" width="20" x="75" y="40" fill="hsl(5, 82%, 51%)" id="rect_2" tag_name="svg/rect_2"/>
+  <text text-anchor="middle" x="85" y="20" fill="hsl(0, 0%, 0%)" id="text_4" tag_name="svg/text_4">xx</text>
+  <text text-anchor="middle" x="62.5" y="200" fill="hsl(0, 0%, 21%)" id="text_3" tag_name="svg/text_3">xxxxxxxxx</text>
+  <rect height="210" width="20" x="150" y="-30" fill="hsl(217, 69%, 57%)" id="rect_1" tag_name="svg/rect_1"/>
+  <text text-anchor="middle" x="160" y="-50" fill="hsl(0, 0%, 0%)" id="text_2" tag_name="svg/text_2">xx</text>
+  <rect height="190" width="20" x="175" y="-10" fill="hsl(5, 82%, 51%)" id="rect" tag_name="svg/rect"/>
+  <text text-anchor="middle" x="185" y="-30" fill="hsl(0, 0%, 0%)" id="text_1" tag_name="svg/text_1">xx</text>
+  <text text-anchor="middle" x="162.5" y="200" fill="hsl(0, 0%, 21%)" id="text" tag_name="svg/text">xxxxxxxxx</text>
+</svg>
