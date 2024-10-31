@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-# 设置英文和负号显示
 plt.rcParams['axes.unicode_minus'] = False
 
 # 定义输入特征名称
@@ -38,7 +37,6 @@ for layer_name, weights in loaded_weights.items():
 weights_matrix = np.vstack(aggregated_weights)  # 将各层权重堆叠成矩阵
 
 # 绘制热力图
-# 绘制热力图，横纵轴对调
 plt.figure(figsize=(15, 10))
 sns.heatmap(weights_matrix.T, annot=True, fmt=".2f", yticklabels=feature_names, xticklabels=layer_names, cmap="Blues")
 plt.ylabel("Input Features")
