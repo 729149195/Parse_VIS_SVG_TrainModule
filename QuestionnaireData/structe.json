@@ -1,0 +1,144 @@
+{
+  "formData": {
+    "age": "34",
+    "gender": "female",
+    "visualimpairment": "no",
+    "visualizationExperience": "no",
+    "id": "149831"
+  },
+  "startTime": "2024-10-31 02:45:49",
+  "endTime": "2024-10-31 02:47:48",
+  "duration": "1 minutes 59 seconds",
+  "steps": [
+    {
+      "stepId": 21,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 42,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 20,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 16,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 35,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 28,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 25,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 51,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 30,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    },
+    {
+      "stepId": 50,
+      "groups": [
+        {
+          "group": "组合1",
+          "nodes": [],
+          "ratings": {
+            "attention": 1,
+            "boundary": 1
+          }
+        }
+      ]
+    }
+  ]
+}

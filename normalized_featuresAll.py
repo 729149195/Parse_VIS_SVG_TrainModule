@@ -64,28 +64,6 @@ def nalize_features(input_path, output_path):
     df['bbox_fill_area'] = np.log1p(df['bbox_fill_area']) / np.log1p(svg_area)
     df['bbox_stroke_area'] = (np.log1p(df['bbox_stroke_area']) / np.log1p(svg_area)) * 0.3  # w_stroke = 0.3
 
-    # # 计算颜色显著性
-    # w_H, w_S, w_L = 0.4, 0.3, 0.3  # 权重
-    # H_ref = 0.0  # 红色为参考色相
-
-    # sigma = 0.25  # 控制色相显著性曲线宽度的参数
-
-    # # 填充色显著性
-    # df['fill_hue_sal'] = df['fill_h_n'].apply(lambda h: compute_hue_sal(h, H_ref, sigma))
-    # df['fill_saturation_sal'] = df['fill_s_n']
-    # df['fill_lightness_sal'] = 1 - abs(df['fill_l_n'] - 0.5) / 0.5
-    # df['fill_color_sal'] = (w_H * df['fill_hue_sal'] +
-    #                              w_S * df['fill_saturation_sal'] +
-    #                              w_L * df['fill_lightness_sal'])
-
-    # # 描边色显著性
-    # df['stroke_hue_sal'] = df['stroke_h_n'].apply(lambda h: compute_hue_sal(h, H_ref, sigma))
-    # df['stroke_saturation_sal'] = df['stroke_s_n']
-    # df['stroke_lightness_sal'] = 1 - abs(df['stroke_l_n'] - 0.5) / 0.5
-    # df['stroke_color_sal'] = (w_H * df['stroke_hue_sal'] +
-    #                                w_S * df['stroke_saturation_sal'] +
-    #                                w_L * df['stroke_lightness_sal'])
-
     # 4. 描边宽度归一化
     max_stroke_width = df['stroke_width'].max() if df['stroke_width'].max() > 0 else 1.0
     df['stroke_width'] = np.sqrt(df['stroke_width'] / max_stroke_width)
@@ -122,11 +100,6 @@ def nalize_features(input_path, output_path):
     ]
     df[n_columns].to_csv(output_path, index=False)
 
-def compute_hue_sal(h_n, H_ref=0.0, sigma=0.25):
-    delta_h = min(abs(h_n - H_ref), 1 - abs(h_n - H_ref))
-    hue_sal = np.exp(- (delta_h / sigma) ** 2)
-    return hue_sal
-
 def process_all_features(input_dir, output_dir):
     os.makedirs(output_dir, exist_ok=True)
 
@@ -138,6 +111,6 @@ def process_all_features(input_dir, output_dir):
         nalize_features(input_path, output_path)
 
 # 示例使用
-input_dir = './features_v4'
-output_dir = './n_v4_features'
+input_dir = './Questionnaire_features'
+output_dir = './Questionnaire_normal_features_linerposition'
 process_all_features(input_dir, output_dir)

@@ -512,7 +512,7 @@ def process_svg_files_in_directory(input_dir, features_output_dir, svg_output_di
         base_filename = os.path.splitext(os.path.basename(svg_file))[0]
 
         # Define the output paths for the features CSV and SVG with IDs
-        output_csv_path = os.path.join(features_output_dir, f"{base_filename}_features.csv")
+        output_csv_path = os.path.join(features_output_dir, f"{base_filename}.csv")
         output_svg_with_ids_path = os.path.join(svg_output_dir, f"{base_filename}_with_ids.svg")
 
         # Process the SVG and save both features and modified SVG with IDs
@@ -522,8 +522,8 @@ def process_svg_files_in_directory(input_dir, features_output_dir, svg_output_di
         print(f"Saved SVG with IDs to {output_svg_with_ids_path}")
 
 # Example usage:
-input_dir = './newData3'
-features_output_dir = './features_v4'
+input_dir = './QDataList/SVGs'
+features_output_dir = './Questionnaire_features'
 svg_output_dir = './svg_with_ids'
 
 process_svg_files_in_directory(input_dir, features_output_dir, svg_output_dir)

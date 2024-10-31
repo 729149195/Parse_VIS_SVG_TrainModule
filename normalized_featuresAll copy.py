@@ -157,6 +157,6 @@ def process_all_features(input_dir, output_dir):
         nalize_features(input_path, output_path)
 
 # 示例使用
-input_dir = './features_v4'
-output_dir = './n_v5_features'
+input_dir = './Questionnaire_features'
+output_dir = './Questionnaire_normal_features_sigmaposition'
 process_all_features(input_dir, output_dir)
