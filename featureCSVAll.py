@@ -168,31 +168,75 @@ def get_inherited_attribute(element, attribute_name):
     return None
 
 def apply_transform(transform_str, points):
-    if transform_str is None:
+    if not transform_str:
         return points
+    # 初始化为单位矩阵
+    transform_matrix = np.identity(3)
     transform_commands = re.findall(r'\w+\([^)]+\)', transform_str)
     for command in transform_commands:
         cmd_type = command.split('(')[0]
         values = list(map(float, re.findall(r'[-\d.]+', command)))
         if cmd_type == 'translate':
             dx, dy = values if len(values) == 2 else (values[0], 0)
-            points = [(x + dx, y + dy) for x, y in points]
+            matrix = np.array([
+                [1, 0, dx],
+                [0, 1, dy],
+                [0, 0, 1]
+            ])
+            transform_matrix = np.dot(transform_matrix, matrix)
         elif cmd_type == 'scale':
             if len(values) == 1:
                 sx, sy = values[0], values[0]
             else:
                 sx, sy = values
-            points = [(x * sx, y * sy) for x, y in points]
+            matrix = np.array([
+                [sx, 0, 0],
+                [0, sy, 0],
+                [0, 0, 1]
+            ])
+            transform_matrix = np.dot(transform_matrix, matrix)
         elif cmd_type == 'rotate':
             angle = np.radians(values[0])
             cos_val, sin_val = np.cos(angle), np.sin(angle)
             if len(values) == 3:
                 cx, cy = values[1], values[2]
-                points = [(cos_val * (x - cx) - sin_val * (y - cy) + cx,
-                           sin_val * (x - cx) + cos_val * (y - cy) + cy) for x, y in points]
+                matrix = np.array([
+                    [cos_val, -sin_val, cx - cos_val * cx + sin_val * cy],
+                    [sin_val, cos_val, cy - sin_val * cx - cos_val * cy],
+                    [0, 0, 1]
+                ])
             else:
-                points = [(x * cos_val - y * sin_val, x * sin_val + y * cos_val) for x, y in points]
-    return points
+                matrix = np.array([
+                    [cos_val, -sin_val, 0],
+                    [sin_val, cos_val, 0],
+                    [0, 0, 1]
+                ])
+            transform_matrix = np.dot(transform_matrix, matrix)
+        elif cmd_type == 'matrix':
+            if len(values) == 6:
+                a, b, c, d, e, f = values
+                matrix = np.array([
+                    [a, c, e],
+                    [b, d, f],
+                    [0, 0, 1]
+                ])
+                transform_matrix = np.dot(transform_matrix, matrix)
+            else:
+                # 无效的矩阵，跳过
+                print(f"警告: 无效的 matrix 变换: {command}")
+                continue
+        else:
+            # 未知的变换命令，跳过
+            print(f"警告: 未知的变换命令: {cmd_type}")
+            continue
+
+    # 应用最终的变换矩阵到点上
+    transformed_points = []
+    for x, y in points:
+        point = np.array([x, y, 1])
+        transformed_point = np.dot(transform_matrix, point)
+        transformed_points.append((transformed_point[0], transformed_point[1]))
+    return transformed_points
 
 
 def calculate_path_length(path):
@@ -436,7 +480,40 @@ def extract_features(element, layer_extractor, current_transform='', current_col
 
 def process_svg(file_path):
     svg_parser = SVGParser(file_path)
-    root = svg_parser.run().getroot()
+    tree = svg_parser.run()
+    root = tree.getroot()
+
+    # 提取 viewBox 和 width/height 属性
+    viewBox = root.attrib.get('viewBox', None)
+    width = root.attrib.get('width', None)
+    height = root.attrib.get('height', None)
+
+    initial_transform = ''
+    if viewBox and width and height:
+        # 使用正则表达式分割 viewBox，以处理逗号和空白字符
+        numbers = re.split(r'[,\s]+', viewBox.strip())
+        if len(numbers) != 4:
+            print(f"警告: viewBox 的格式不正确: {viewBox}")
+            minX, minY, widthV, heightV = 0.0, 0.0, float(width), float(height)
+        else:
+            try:
+                minX, minY, widthV, heightV = map(float, numbers)
+            except ValueError:
+                print(f"警告: 无法将 viewBox 数值转换为浮点数: {viewBox}")
+                minX, minY, widthV, heightV = 0.0, 0.0, float(width), float(height)
+
+        try:
+            width = float(width)
+            height = float(height)
+            sx = width / widthV
+            sy = height / heightV
+            tx = -minX * sx
+            ty = -minY * sy
+            # 构建矩阵变换
+            initial_transform = f"matrix({sx}, 0, 0, {sy}, {tx}, {ty})"
+        except Exception as e:
+            print(f"错误: 计算 viewBox 变换时出错: {e}")
+            initial_transform = ''
 
     layer_extractor = LayerDataExtractor()
     layer_extractor.extract_layers(root)
@@ -444,9 +521,9 @@ def process_svg(file_path):
     features = []
     elements = list(root.iter())
     for element in tqdm(elements, total=len(elements), desc="Processing SVG Elements"):
-        if element.tag.split('}')[-1] in {'circle', 'rect', 'line', 'polyline', 'polygon', 'path', 'text', 'ellipse',
-                                          'image', 'use'}:
-            feature = extract_features(element, layer_extractor)
+        tag = element.tag.split('}')[-1]
+        if tag in {'circle', 'rect', 'line', 'polyline', 'polygon', 'path', 'text', 'ellipse', 'image', 'use'}:
+            feature = extract_features(element, layer_extractor, current_transform=initial_transform)
             if feature:
                 features.append(feature)
     return features
@@ -521,8 +598,8 @@ def process_svg_files_in_directory(input_dir, features_output_dir, svg_output_di
         print(f"Saved features to {output_csv_path}")
         print(f"Saved SVG with IDs to {output_svg_with_ids_path}")
 
-# Example usage:
 input_dir = './QDataList/SVGs'
+# input_dir = './newData3'
 features_output_dir = './Questionnaire_features'
 svg_output_dir = './svg_with_ids'
 

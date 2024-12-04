@@ -68,5 +68,5 @@ class SVGModifier:
         self.tree.write(output_path, encoding='utf-8', xml_declaration=True, pretty_print=True)
 
 # 使用新方法批量处理SVG文件
-svg_modifier = SVGModifier('./randomsvg_withoutaxis', './newData3')
+svg_modifier = SVGModifier('./svg_withoutaxis', './newData3')
 svg_modifier.modify_and_save_svgs()

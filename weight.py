@@ -16,7 +16,7 @@ feature_names = [
 num_features = len(feature_names)  # 输入特征数
 
 # 加载保存的权重
-with open('model_weights.pkl', 'rb') as f:
+with open('data.pkl', 'rb') as f:
     loaded_weights = pickle.load(f)
 
 # 初始化存储每层权重的列表和层名称

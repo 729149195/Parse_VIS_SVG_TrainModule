@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
-def nalize_features(input_path, output_path):
+def normalize_features(input_path, output_path):
     df = pd.read_csv(input_path)
 
     # 替换 -1 为一个小正数
@@ -21,22 +21,22 @@ def nalize_features(input_path, output_path):
     svg_area = svg_width * svg_height
 
     # 1. 标签类型归一化
-    df['tag'] = df['tag'] / 100.0
+    df['tag'] = df['tag'] / 8.0
 
     # 2. 不透明度归一化
-    df['opacity'] = np.sqrt(df['opacity'])
+    df['opacity'] = np.sqrt(df['opacity'] * 0.5) 
 
     # 3. 颜色归一化
     # 色相归一化
     # df['fill_h_n'] = df['fill_h'] / 360.0
     # df['stroke_h_n'] = df['stroke_h'] / 360.0
-    
-    df['fill_h_cos'] = np.cos(2 * np.pi * df['fill_h'] / 360)
-    df['fill_h_sin'] = np.sin(2 * np.pi * df['fill_h'] / 360)
-    
-    df['stroke_h_cos'] = np.cos(2 * np.pi * df['stroke_h'] / 360)
-    df['stroke_h_sin'] = np.sin(2 * np.pi * df['stroke_h'] / 360)
-    
+
+    df['fill_h_cos'] = (np.cos(2 * np.pi * df['fill_h'] / 360) + 1) / 2.0
+    df['fill_h_sin'] = (np.sin(2 * np.pi * df['fill_h'] / 360) + 1) / 2.0
+
+    df['stroke_h_cos'] = (np.cos(2 * np.pi * df['stroke_h'] / 360) + 1) / 2.0 * 0.3
+    df['stroke_h_sin'] = (np.sin(2 * np.pi * df['stroke_h'] / 360) + 1) / 2.0 * 0.3
+
     # 饱和度归一化
     df['fill_s_n'] = df['fill_s'] / 100.0
     df['stroke_s_n'] = df['stroke_s'] / 100.0
@@ -44,18 +44,18 @@ def nalize_features(input_path, output_path):
     # 亮度归一化
     df['fill_l_n'] = df['fill_l'] / 100.0
     df['stroke_l_n'] = df['stroke_l'] / 100.0
-    
+
     # 6. 边界框位置和尺寸归一化
     svg_center_x = (svg_min_left + svg_max_right) / 2.0
     svg_center_y = (svg_min_top + svg_max_bottom) / 2.0
 
-    df['bbox_min_left_n'] = (df['bbox_min_left'] - svg_center_x) / (svg_width / 2.0)
-    df['bbox_max_right_n'] = (df['bbox_max_right'] - svg_center_x) / (svg_width / 2.0)
-    df['bbox_min_top_n'] = (df['bbox_min_top'] - svg_center_y) / (svg_height / 2.0)
-    df['bbox_max_bottom_n'] = (df['bbox_max_bottom'] - svg_center_y) / (svg_height / 2.0)
+    df['bbox_left_n'] = df['bbox_min_left'] / svg_width
+    df['bbox_right_n'] = df['bbox_max_right'] / svg_width
+    df['bbox_top_n'] = df['bbox_min_top'] / svg_height
+    df['bbox_bottom_n'] = df['bbox_max_bottom'] / svg_height
 
-    df['bbox_center_x_n'] = (df['bbox_center_x'] - svg_center_x) / (svg_width / 2.0)
-    df['bbox_center_y_n'] = (df['bbox_center_y'] - svg_center_y) / (svg_height / 2.0)
+    df['bbox_center_x_n'] = df['bbox_center_x'] / svg_width
+    df['bbox_center_y_n'] = df['bbox_center_y'] / svg_height
 
     df['bbox_width_n'] = df['bbox_width'] / svg_width
     df['bbox_height_n'] = df['bbox_height'] / svg_height
@@ -66,7 +66,7 @@ def nalize_features(input_path, output_path):
 
     # 4. 描边宽度归一化
     max_stroke_width = df['stroke_width'].max() if df['stroke_width'].max() > 0 else 1.0
-    df['stroke_width'] = np.sqrt(df['stroke_width'] / max_stroke_width)
+    df['stroke_width'] = np.sqrt(df['stroke_width'] / max_stroke_width) * 0.3
 
     # 5. 图层显著性归一化
     lambda_decay = 0.5  # 衰减系数
@@ -86,17 +86,16 @@ def nalize_features(input_path, output_path):
             else:
                 sal += 0
         return sal
-    
+
     df['layer_sal'] = df['layer'].apply(compute_layer_sal)
 
-    # 8. 保存归一化后的特征数据
     n_columns = [
         'tag_name', 'tag', 'opacity',
-        'fill_h_cos', 'fill_h_sin',  'fill_s_n', 'fill_l_n',
+        'fill_h_cos', 'fill_h_sin', 'fill_s_n', 'fill_l_n',
         'stroke_h_cos', 'stroke_h_sin', 'stroke_s_n', 'stroke_l_n', 'stroke_width',
-        'layer_sal', 'bbox_min_left_n', 'bbox_max_right_n', 'bbox_min_top_n',
-        'bbox_max_bottom_n', 'bbox_center_x_n', 'bbox_center_y_n',
-        'bbox_width_n', 'bbox_height_n', 'bbox_fill_area', 'bbox_stroke_area'
+        'layer_sal', 'bbox_left_n', 'bbox_right_n', 'bbox_top_n',
+        'bbox_bottom_n', 'bbox_center_x_n', 'bbox_center_y_n',
+        'bbox_width_n', 'bbox_height_n', 'bbox_fill_area'
     ]
     df[n_columns].to_csv(output_path, index=False)
 
@@ -108,7 +107,7 @@ def process_all_features(input_dir, output_dir):
     for file_name in tqdm(files, desc="Processing files"):
         input_path = os.path.join(input_dir, file_name)
         output_path = os.path.join(output_dir, file_name)
-        nalize_features(input_path, output_path)
+        normalize_features(input_path, output_path)
 
 # 示例使用
 input_dir = './Questionnaire_features'
