@@ -253,13 +253,26 @@ def get_transformed_bbox(element, current_transform=''):
     bbox = None
     fill_area = 0.0
     stroke_area = 0.0
-    stroke_width = float(element.attrib.get('stroke-width', 1.0))
+    stroke = element.attrib.get('stroke', 'currentColor')
+    if stroke == 'currentColor':
+        stroke = get_inherited_attribute(element, 'stroke') or 'none'
+    
+    stroke_width = 0.0
+    if stroke.lower() != 'none':
+        stroke_width = float(element.attrib.get('stroke-width', 1.0))
 
     if element.tag.endswith('rect'):
+        # 处理 'auto' 值，将其替换为默认值 0
         x = float(element.attrib.get('x', 0))
         y = float(element.attrib.get('y', 0))
-        width = float(element.attrib.get('width', 0))
-        height = float(element.attrib.get('height', 0))
+        try:
+            width = float(element.attrib.get('width', 0))
+        except ValueError:
+            width = 0.0
+        try:
+            height = float(element.attrib.get('height', 0))
+        except ValueError:
+            height = 0.0
         bbox = [(x, y), (x + width, y), (x, y + height), (x + width, y + height)]
         fill_area = width * height
         stroke_area = 2 * (width + height) * stroke_width
@@ -402,7 +415,7 @@ def is_visible(element):
 
 def extract_features(element, layer_extractor, current_transform='', current_color='black'):
     # 过滤不处理的标签
-    filter_tags = {'defs', 'symbol', 'clipPath', 'mask'}  # 根据需求调整过滤的标签
+    filter_tags = {'defs', 'symbol', 'clipPath', 'mask'}  # ��据需求调整过滤的标签
     tag_without_namespace = element.tag.split('}')[-1]
     # 如果元素的标签在过滤列表中，视为不可见元素
     if tag_without_namespace in filter_tags:
@@ -447,12 +460,16 @@ def extract_features(element, layer_extractor, current_transform='', current_col
     opacity = float(element.attrib.get('opacity', 1.0))
     fill = element.attrib.get('fill', 'currentColor')
     stroke = element.attrib.get('stroke', 'currentColor')
-    stroke_width = float(element.attrib.get('stroke-width', 1.0))
-
+    
     if fill == 'currentColor':
         fill = get_inherited_attribute(element, 'fill') or 'black'
     if stroke == 'currentColor':
         stroke = get_inherited_attribute(element, 'stroke') or 'none'
+
+    # 修改 stroke-width 的处理逻辑
+    stroke_width = 0.0
+    if stroke.lower() != 'none':
+        stroke_width = float(element.attrib.get('stroke-width', 1.0))
 
     fill_h, fill_s, fill_l = get_color_features(fill, current_color)
     stroke_h, stroke_s, stroke_l = get_color_features(stroke, current_color)
@@ -598,9 +615,8 @@ def process_svg_files_in_directory(input_dir, features_output_dir, svg_output_di
         print(f"Saved features to {output_csv_path}")
         print(f"Saved SVG with IDs to {output_svg_with_ids_path}")
 
-input_dir = './QDataList/SVGs'
-# input_dir = './newData3'
-features_output_dir = './Questionnaire_features'
-svg_output_dir = './svg_with_ids'
+input_dir = './newData4'
+features_output_dir = './Questionnaire_features_2'
+svg_output_dir = './svg_with_ids_2'
 
 process_svg_files_in_directory(input_dir, features_output_dir, svg_output_dir)

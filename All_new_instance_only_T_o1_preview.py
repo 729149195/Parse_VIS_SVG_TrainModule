@@ -23,7 +23,7 @@ class ContrastiveLoss(nn.Module):
     带温度参数的对比损失函数。
     接受两个样本的嵌入和目标标签==1（正样本对）或标签==0（负样本对）。
     """
-    def __init__(self, temperature=0.07):
+    def __init__(self, temperature=0.2):
         super(ContrastiveLoss, self).__init__()
         self.temperature = temperature
         self.cosine_similarity = nn.CosineSimilarity(dim=-1)
@@ -131,7 +131,7 @@ class FeaturePairDataset(Dataset):
     def t_distribution(self, distances):
         # distances: list of floats
         distances = np.array(distances)
-        df = 1  # 自由度，可以根据需要调整
+        df = 30# 自由度，可以根据需要调整
         t_probs = 1 / (1 + distances**2 / df)
         t_probs = t_probs / t_probs.sum()  # 归一化，使总和为 1
         return t_probs
@@ -201,7 +201,7 @@ if __name__ == "__main__":
     # 损失函数参数
     parser.add_argument('--learning_rate', default=0.01, type=float, help='学习率')
     parser.add_argument('--weight_decay', default=1e-5, type=float, help='权重衰减')
-    parser.add_argument('--temperature', default=0.07, type=float, help='温度参数')
+    parser.add_argument('--temperature', default=0.2, type=float, help='温度参数')
 
     # 学习率调度器参数
     parser.add_argument('--lr_scheduler', default='step', type=str, help='学习率调度器类型（例如 "step" 或 "cosine"）')

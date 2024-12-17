@@ -4,10 +4,10 @@ import pandas as pd
 from collections import defaultdict
 
 # 定义目录路径
-questionnaire_dir = 'QuestionnaireData'
-features_dir = 'Questionnaire_normal_features_linerposition'
-step_groups_dir = 'StepGroups'
-output_dir = 'UpdatedStepGroups'
+questionnaire_dir = './DataProduce/QuestionnaireData_3'
+features_dir = 'Questionnaire_normal_features_linerposition_3'
+step_groups_dir = './DataProduce/StepGroups_3'
+output_dir = './DataProduce/UpdatedStepGroups_3'
 
 # 创建输出文件夹
 os.makedirs(step_groups_dir, exist_ok=True)
@@ -16,7 +16,7 @@ os.makedirs(output_dir, exist_ok=True)
 # Step 1: 生成 StepGroups
 step_groups = defaultdict(list)
 
-# 遍历 QuestionnaireData 文件夹中的每个 JSON 文件
+# 遍历问卷数据文件
 for filename in os.listdir(questionnaire_dir):
     if filename.endswith(".json"):
         file_path = os.path.join(questionnaire_dir, filename)
@@ -25,7 +25,7 @@ for filename in os.listdir(questionnaire_dir):
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
             
-            # 提取 steps 和 group nodes，按 stepId 进行分组
+            # 对每个step进行处理
             for step in data.get("steps", []):
                 step_id = step.get("stepId")
                 for group in step.get("groups", []):
@@ -33,7 +33,7 @@ for filename in os.listdir(questionnaire_dir):
                     ratings = group.get("ratings", {})
                     correlation_strength = ratings.get("correlation_strength")
                     exclusionary_force = ratings.get("exclusionary_force")
-                    # 将评分值添加到节点列表的末尾
+                    # 将节点列表和评分组合
                     nodes_with_ratings = nodes + [correlation_strength, exclusionary_force]
                     step_groups[step_id].append(nodes_with_ratings)
 
@@ -87,19 +87,16 @@ for step_file in os.listdir(step_groups_dir):
         updated_step_data = []
         for group in step_data:
             nodes_with_ratings = group
-            # 分离节点和评分
-            nodes = nodes_with_ratings[:-2]  # 除去最后两个评分值
-            ratings = nodes_with_ratings[-2:]  # 获取最后两个评分值
+            nodes = nodes_with_ratings[:-2]  # 分离节点
+            ratings = nodes_with_ratings[-2:]  # 分离评分
+            
             updated_group = []
             for node in nodes:
-                # 根据节点名查找对应的特征向量
                 if node in tag_suffix_to_features:
                     feature_vector = tag_suffix_to_features[node]
                     updated_group.append(feature_vector)
-                else:
-                    print(f"Warning: Node {node} not found in CSV for stepId {step_id}.")
-            # 将评分值添加回组的末尾
-            updated_group.extend(ratings)
+            
+            updated_group.extend(ratings)  # 添加回评分
             updated_step_data.append(updated_group)
         
         # 构建最终的 JSON 数据
