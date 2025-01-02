@@ -10,7 +10,7 @@ from torch.optim import lr_scheduler
 import math
 
 def save_model(args, model, optimizer, scheduler, current_epoch):
-    out = os.path.join(args.model_path, f"checkpoint_{current_epoch}.tar")
+    out = os.path.join(args.model_path, f"best_model.tar")
     state = {
         'net': model.state_dict(),
         'optimizer': optimizer.state_dict(),
@@ -94,32 +94,46 @@ class FeaturePairDataset(Dataset):
     def sample_pairs_for_one_sample(self, base_feature, candidate_features, identifier, chosen_set, label):
         """
         对于一个给定基准样本 base_feature，根据 candidate_features 的距离使用正态分布pdf计算概率，并抽样。
+        对于正样本对（label=1），直接选择所有样本。
+        对于负样本对（label=0），根据距离概率进行抽样。
         """
         if len(candidate_features) == 0:
             return []
 
-        distances = []
-        for cf in candidate_features:
-            dist = self.bbox_distance(base_feature, cf)
-            distances.append(dist)
-
-        probs = self.normal_prob(distances)
-        percentage = self.get_percentage(identifier)
-        num_samples = int(len(candidate_features) * percentage)
-        if num_samples == 0:
-            num_samples = 1
-
-        selected_indices = np.random.choice(len(candidate_features), size=num_samples, replace=False, p=probs)
-        
         selected_pairs = []
-        for idx in selected_indices:
-            f1_id = self.feature_to_idx[tuple(base_feature.tolist())]
-            f2_id = self.feature_to_idx[tuple(candidate_features[idx].tolist())]
-            pair_key = (min(f1_id, f2_id), max(f1_id, f2_id), label)
-            # 避免重复选择相同的样本对
-            if pair_key not in chosen_set:
-                chosen_set.add(pair_key)
-                selected_pairs.append((base_feature, candidate_features[idx], label))
+        
+        if label == 1:  # 正样本对：选择所有样本
+            for cf in candidate_features:
+                f1_id = self.feature_to_idx[tuple(base_feature.tolist())]
+                f2_id = self.feature_to_idx[tuple(cf.tolist())]
+                pair_key = (min(f1_id, f2_id), max(f1_id, f2_id), label)
+                # 避免重复选择相同的样本对
+                if pair_key not in chosen_set:
+                    chosen_set.add(pair_key)
+                    selected_pairs.append((base_feature, cf, label))
+        else:  # 负样本对：按概率抽样
+            distances = []
+            for cf in candidate_features:
+                dist = self.bbox_distance(base_feature, cf)
+                distances.append(dist)
+
+            probs = self.normal_prob(distances)
+            percentage = self.get_percentage(identifier)
+            num_samples = int(len(candidate_features) * percentage)
+            if num_samples == 0:
+                num_samples = 1
+
+            selected_indices = np.random.choice(len(candidate_features), size=num_samples, replace=False, p=probs)
+            
+            for idx in selected_indices:
+                f1_id = self.feature_to_idx[tuple(base_feature.tolist())]
+                f2_id = self.feature_to_idx[tuple(candidate_features[idx].tolist())]
+                pair_key = (min(f1_id, f2_id), max(f1_id, f2_id), label)
+                # 避免重复选择相同的样本对
+                if pair_key not in chosen_set:
+                    chosen_set.add(pair_key)
+                    selected_pairs.append((base_feature, candidate_features[idx], label))
+
         return selected_pairs
 
     def load_data(self, data_dir):
@@ -211,24 +225,24 @@ if __name__ == "__main__":
     parser.add_argument('--workers', default=0, type=int, help='数据加载工作线程数')
     parser.add_argument('--data_dir', default='./DataProduce/UpdatedStepGroups_2', type=str, help='数据集目录')
 
-    parser.add_argument('--batch_size', default=64, type=int, help='批大小')
+    parser.add_argument('--batch_size', default=128, type=int, help='批大小')
     parser.add_argument('--start_epoch', default=0, type=int, help='起始epoch')
-    parser.add_argument('--epochs', default=200, type=int, help='训练epoch数')
+    parser.add_argument('--epochs', default=1000, type=int, help='训练epoch数')
 
     parser.add_argument('--feature_dim', default=4, type=int, help='特征维度')
-    parser.add_argument('--model_path', default='save/model', type=str, help='模型保存路径')
+    parser.add_argument('--model_path', default='save/model_ZT456', type=str, help='模型保存路径')
     parser.add_argument('--reload', action='store_true', help='从检查点重新加载模型')
 
-    parser.add_argument('--learning_rate', default=0.01, type=float, help='学习率')
+    parser.add_argument('--learning_rate', default=0.001, type=float, help='学习率')
     parser.add_argument('--weight_decay', default=1e-5, type=float, help='权重衰减')
-    parser.add_argument('--temperature', default=0.2, type=float, help='温度参数')
+    parser.add_argument('--temperature', default=0.1, type=float, help='温度参数')
 
-    parser.add_argument('--lr_scheduler', default='step', type=str, help='学习率调度器类型（例如 "step" 或 "cosine"）')
+    parser.add_argument('--lr_scheduler', default='cosine', type=str, help='学习率调度器类型（例如 "step" 或 "cosine")')
     parser.add_argument('--step_size', default=80, type=int, help='StepLR 中的 step_size')
     parser.add_argument('--gamma', default=0.1, type=float, help='StepLR 中的 gamma')
-    parser.add_argument('--cosine_T_max', default=50, type=int, help='CosineAnnealingLR 中的 T_max')
+    parser.add_argument('--cosine_T_max', default=1000, type=int, help='CosineAnnealingLR 中的 T_max')
 
-    parser.add_argument('--sigma', default=1.0, type=float, help='正态分布sigma参数')
+    parser.add_argument('--sigma', default=1, type=float, help='正态分布sigma参数')
 
     args = parser.parse_args()
 
@@ -270,7 +284,7 @@ if __name__ == "__main__":
         raise ValueError(f"Unsupported lr_scheduler type: {args.lr_scheduler}")
 
     if args.reload:
-        model_fp = os.path.join(args.model_path, f"checkpoint_{args.start_epoch}.tar")
+        model_fp = os.path.join(args.model_path, "best_model.tar")
         if os.path.exists(model_fp):
             checkpoint = torch.load(model_fp)
             model.load_state_dict(checkpoint['net'])
@@ -282,15 +296,22 @@ if __name__ == "__main__":
             print(f"检查点文件 {model_fp} 不存在，开始从头训练。")
 
     criterion = ContrastiveLoss(temperature=args.temperature).to(device)
+    
+    best_loss = float('inf')  # 初始化最佳损失为无穷大
+    best_epoch = 0  # 记录最佳epoch
 
     for epoch in range(args.start_epoch, args.epochs):
         print(f"开始训练 Epoch {epoch + 1}/{args.epochs}")
         loss_epoch = train()
         scheduler.step()  # 更新学习率
-        if (epoch + 1) % 5 == 0:
+        
+        # 如果当前损失更好，则保存模型
+        if loss_epoch < best_loss:
+            best_loss = loss_epoch
+            best_epoch = epoch + 1
             save_model(args, model, optimizer, scheduler, epoch + 1)
-            print(f"已保存模型至 epoch {epoch + 1}")
-        print(f"Epoch [{epoch + 1}/{args.epochs}]\t Loss: {loss_epoch:.4f}\t 当前学习率: {optimizer.param_groups[0]['lr']:.6f}")
+            print(f"发现更好的模型！Epoch {epoch + 1}，损失: {loss_epoch:.4f}")
+        
+        print(f"Epoch [{epoch + 1}/{args.epochs}]\t Loss: {loss_epoch:.4f}\t 最佳Loss: {best_loss:.4f} (Epoch {best_epoch})\t 当前学习率: {optimizer.param_groups[0]['lr']:.6f}")
 
-    save_model(args, model, optimizer, scheduler, args.epochs)
-    print("训练完成，最终模型已保存。")
+    print(f"训练完成！最佳模型在 Epoch {best_epoch}，损失为 {best_loss:.4f}")

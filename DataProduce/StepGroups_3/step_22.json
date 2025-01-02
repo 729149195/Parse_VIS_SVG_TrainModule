@@ -37,6 +37,41 @@
     2
   ],
   [
+    "rect_5",
+    "rect_3",
+    "rect_1",
+    1,
+    1
+  ],
+  [
+    "line_8",
+    "line_7",
+    "rect_5",
+    "rect_4",
+    "rect_3",
+    "rect_2",
+    "line_1",
+    "line",
+    1,
+    2
+  ],
+  [
+    "rect_4",
+    "rect_2",
+    "rect",
+    1,
+    1
+  ],
+  [
+    "rect_1",
+    "rect",
+    "line_6",
+    "line_3",
+    "line_2",
+    2,
+    2
+  ],
+  [
     "rect_3",
     "rect_2",
     3,

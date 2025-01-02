@@ -224,13 +224,13 @@ if __name__ == "__main__":
     parser.add_argument('--data_dir', default='./DataProduce/UpdatedStepGroups_3', type=str, help='数据集目录')
 
     # 训练参数
-    parser.add_argument('--batch_size', default=1024, type=int, help='批大小')
+    parser.add_argument('--batch_size', default=32, type=int, help='批大小')
     parser.add_argument('--start_epoch', default=0, type=int, help='起始epoch')
-    parser.add_argument('--epochs', default=10, type=int, help='训练epoch数')
+    parser.add_argument('--epochs', default=300, type=int, help='训练epoch数')
 
     # 模型参数
     parser.add_argument('--feature_dim', default=4, type=int, help='特征维度')
-    parser.add_argument('--model_path', default='save/model', type=str, help='模型保存路径')
+    parser.add_argument('--model_path', default='save/model_GS', type=str, help='模型保存路径')
     parser.add_argument('--reload', action='store_true', help='从检查点重新加载模型')
 
     # 损失函数参数
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
     # 学习率调度器参数
     parser.add_argument('--lr_scheduler', default='step', type=str, help='学习率调度器类型（例如 "step" 或 "cosine"）')
-    parser.add_argument('--step_size', default=60, type=int, help='StepLR 中的 step_size')
+    parser.add_argument('--step_size', default=100, type=int, help='StepLR 中的 step_size')
     parser.add_argument('--gamma', default=0.1, type=float, help='StepLR 中的 gamma')
     parser.add_argument('--cosine_T_max', default=50, type=int, help='CosineAnnealingLR 中的 T_max')
 

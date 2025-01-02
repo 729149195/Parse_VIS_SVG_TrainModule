@@ -32,6 +32,58 @@
     3
   ],
   [
+    "rect",
+    "rect_2",
+    "rect_1",
+    "rect_3",
+    "rect_5",
+    "rect_6",
+    "rect_8",
+    "rect_11",
+    2,
+    2
+  ],
+  [
+    "rect_15",
+    "rect_13",
+    "rect_12",
+    "rect_4",
+    "rect_14",
+    "rect_10",
+    "rect_7",
+    "rect_9",
+    2,
+    3
+  ],
+  [
+    "rect",
+    "rect_2",
+    "rect_1",
+    "rect_3",
+    "rect_5",
+    "rect_6",
+    "rect_8",
+    "rect_11",
+    2,
+    3
+  ],
+  [
+    "rect_2",
+    "rect_1",
+    "rect_3",
+    "rect",
+    2,
+    3
+  ],
+  [
+    "rect_5",
+    "rect_6",
+    "rect_8",
+    "rect_11",
+    3,
+    3
+  ],
+  [
     "rect_9",
     "rect_12",
     "rect_15",
