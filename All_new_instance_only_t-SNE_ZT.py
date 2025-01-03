@@ -10,7 +10,7 @@ from torch.optim import lr_scheduler
 import math
 
 def save_model(args, model, optimizer, scheduler, current_epoch):
-    out = os.path.join(args.model_path, f"best_model.tar")
+    out = os.path.join(args.model_path, f"best_all_model.tar")
     state = {
         'net': model.state_dict(),
         'optimizer': optimizer.state_dict(),
@@ -59,8 +59,8 @@ class FeaturePairDataset(Dataset):
 
     def bbox_distance(self, f1, f2):
         # 计算定界框距离
-        bbox_f1 = f1[11:15]
-        bbox_f2 = f2[11:15]
+        bbox_f1 = f1[17:21]
+        bbox_f2 = f2[17:21]
         diff = torch.abs(bbox_f1 - bbox_f2)
         dist = diff.min().item()
         return dist
@@ -223,14 +223,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='对比学习训练脚本（使用特征向量）')
     parser.add_argument('--seed', default=42, type=int, help='随机种子')
     parser.add_argument('--workers', default=0, type=int, help='数据加载工作线程数')
-    parser.add_argument('--data_dir', default='./DataProduce/UpdatedStepGroups_2', type=str, help='数据集目录')
+    parser.add_argument('--data_dir', default='./DataProduce/UpdatedStepGroups_3', type=str, help='数据集目录')
 
     parser.add_argument('--batch_size', default=128, type=int, help='批大小')
     parser.add_argument('--start_epoch', default=0, type=int, help='起始epoch')
     parser.add_argument('--epochs', default=1000, type=int, help='训练epoch数')
 
     parser.add_argument('--feature_dim', default=4, type=int, help='特征维度')
-    parser.add_argument('--model_path', default='save/model_ZT456', type=str, help='模型保存路径')
+    parser.add_argument('--model_path', default='save/model_all_mds', type=str, help='模型保存路径')
     parser.add_argument('--reload', action='store_true', help='从检查点重新加载模型')
 
     parser.add_argument('--learning_rate', default=0.001, type=float, help='学习率')
