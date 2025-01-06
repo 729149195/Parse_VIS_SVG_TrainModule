@@ -225,22 +225,22 @@ if __name__ == "__main__":
     parser.add_argument('--workers', default=0, type=int, help='数据加载工作线程数')
     parser.add_argument('--data_dir', default='./DataProduce/UpdatedStepGroups_3', type=str, help='数据集目录')
 
-    parser.add_argument('--batch_size', default=128, type=int, help='批大小')
+    parser.add_argument('--batch_size', default=512, type=int, help='批大小')
     parser.add_argument('--start_epoch', default=0, type=int, help='起始epoch')
-    parser.add_argument('--epochs', default=1000, type=int, help='训练epoch数')
+    parser.add_argument('--epochs', default=300, type=int, help='训练epoch数')
 
     parser.add_argument('--feature_dim', default=4, type=int, help='特征维度')
-    parser.add_argument('--model_path', default='save/model_all_mds', type=str, help='模型保存路径')
+    parser.add_argument('--model_path', default='save/model_mds_3', type=str, help='模型保存路径')
     parser.add_argument('--reload', action='store_true', help='从检查点重新加载模型')
 
     parser.add_argument('--learning_rate', default=0.001, type=float, help='学习率')
     parser.add_argument('--weight_decay', default=1e-5, type=float, help='权重衰减')
-    parser.add_argument('--temperature', default=0.1, type=float, help='温度参数')
+    parser.add_argument('--temperature', default=0.2, type=float, help='温度参数')
 
     parser.add_argument('--lr_scheduler', default='cosine', type=str, help='学习率调度器类型（例如 "step" 或 "cosine")')
     parser.add_argument('--step_size', default=80, type=int, help='StepLR 中的 step_size')
     parser.add_argument('--gamma', default=0.1, type=float, help='StepLR 中的 gamma')
-    parser.add_argument('--cosine_T_max', default=1000, type=int, help='CosineAnnealingLR 中的 T_max')
+    parser.add_argument('--cosine_T_max', default=300, type=int, help='CosineAnnealingLR 中的 T_max')
 
     parser.add_argument('--sigma', default=1, type=float, help='正态分布sigma参数')
 
