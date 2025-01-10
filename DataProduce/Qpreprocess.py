@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # 定义目录路径
 questionnaire_dir = './DataProduce/QuestionnaireData_3'
-features_dir = 'Questionnaire_normal_features_linerposition_mds_2'
+features_dir = 'Questionnaire_normal_features_linerposition_mds_3'
 step_groups_dir = './DataProduce/StepGroups_3'
 output_dir = './DataProduce/UpdatedStepGroups_3'
 

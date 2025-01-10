@@ -10,7 +10,7 @@ from torch.optim import lr_scheduler
 import math
 
 def save_model(args, model, optimizer, scheduler, current_epoch):
-    out = os.path.join(args.model_path, f"best_all_model.tar")
+    out = os.path.join(args.model_path, f"best_model_mds_newnetworksmall_16_nodq.tar")
     state = {
         'net': model.state_dict(),
         'optimizer': optimizer.state_dict(),
@@ -41,9 +41,16 @@ class Network(nn.Module):
         super(Network, self).__init__()
         self.feature_dim = feature_dim
         self.instance_projector = nn.Sequential(
-            nn.Linear(input_dim, 64),
+            # 第一层：20 -> 32
+            nn.Linear(input_dim, 32),
+            nn.BatchNorm1d(32),
             nn.ReLU(),
-            nn.Linear(64, self.feature_dim),
+            # 第二层：32 -> 16
+            nn.Linear(32, 16),
+            nn.BatchNorm1d(16),
+            nn.ReLU(),
+            # 第三层：16 -> feature_dim
+            nn.Linear(16, self.feature_dim)
         ) 
 
     def forward(self, x):
@@ -225,17 +232,17 @@ if __name__ == "__main__":
     parser.add_argument('--workers', default=0, type=int, help='数据加载工作线程数')
     parser.add_argument('--data_dir', default='./DataProduce/UpdatedStepGroups_3', type=str, help='数据集目录')
 
-    parser.add_argument('--batch_size', default=512, type=int, help='批大小')
+    parser.add_argument('--batch_size', default=16, type=int, help='批大小')
     parser.add_argument('--start_epoch', default=0, type=int, help='起始epoch')
     parser.add_argument('--epochs', default=300, type=int, help='训练epoch数')
 
     parser.add_argument('--feature_dim', default=4, type=int, help='特征维度')
-    parser.add_argument('--model_path', default='save/model_mds_3', type=str, help='模型保存路径')
+    parser.add_argument('--model_path', default='save/model', type=str, help='模型保存路径')
     parser.add_argument('--reload', action='store_true', help='从检查点重新加载模型')
 
     parser.add_argument('--learning_rate', default=0.001, type=float, help='学习率')
     parser.add_argument('--weight_decay', default=1e-5, type=float, help='权重衰减')
-    parser.add_argument('--temperature', default=0.2, type=float, help='温度参数')
+    parser.add_argument('--temperature', default=0.1, type=float, help='温度参数')
 
     parser.add_argument('--lr_scheduler', default='cosine', type=str, help='学习率调度器类型（例如 "step" 或 "cosine")')
     parser.add_argument('--step_size', default=80, type=int, help='StepLR 中的 step_size')
